@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    color:white;
+}
+
+@font-face{ font-family: nunito-sansBI; src: url('fonts/NunitoSans-BlackItalic.ttf');}
+@font-face{ font-family: nunito-sansSBI; src: url('fonts/NunitoSans-LightItalic.ttf');}
+@font-face{ font-family: nunito-sansBa; src: url('fonts/NunitoSans-Black.ttf');}
+@font-face{font-family: nunito-sansB; src: url('fonts/NunitoSans-Bold.ttf');}
+
+#content{
+    width: 1100px;
+    margin: 0 auto;
+    background:#fff5ff;
+}
+#header{
+    width: 100%;
+    height: 634px;
+    position: relative;
+}
+#headerBanner{
+    background:#690bb9;
+    width: 445px;
+    height: 100%;
+}
+.botomTable{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 420px;
+    bottom: 80px;
+    color: white;
+    font-family: nunito-sansSBI;
+    font-size: 19pt;
+}
+.botomTable td{
+    padding-left: 40px;
+}
+.headerTitleText{
+    font-family: nunito-sansBI;
+    color:#01dac5;
+    font-size: 40pt;
+}
+.headerSubTitleText{
+    color: #ffaa01;
+    font-size: 27pt;
+    font-family: nunito-sansBa;
+}
+#sectionMasterClases{
+    margin-top: 20px;
+}
+#sectionMasterClases p{
+    text-align: center;
+    color: #690bb9;
+    font-size: 25pt;
+}
+.masterTable{
+    width: 40%;
+    float:left;
+    margin-left: 7%;
+}
+.masterTable .midTablePh{
+    width:34.2%;
+}
+.masterTable td img{
+    width: 100%;
+}
+.masterTable .midTable{
+    width: 66.5%;
+}
+.dataTable{
+    width: 100%;
+    text-align: center;
+}
+#masterTitle{
+    color: #690bb9;
+    font-family: nunito-sansB;
+    font-size: 25pt;
+}
+#masterData{
+    color:white;
+    background: #01dac5;
+    padding-left: 40px;
+    padding-right: 30px;
+    padding-top: 30px;
+    font-size: 10.5pt;
+}
+#masterInsBtn{
+    background: #01dac5;
+    padding-top: 33px;
+    padding-bottom: 33px;
+}
+#masterInsBtn button{
+    color: #690bb9;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 80px;
+    padding-right: 80px;
+    border-radius: 10px;
+}
+/* The Magic Float Center Code */
+.float_center {
+    float: right;
+  
+    position: relative;
+    left: -50%; /* or right 50% */
+    text-align: left;
+  }
+  .float_center > .child {
+    position: relative;
+    left: 50%;
+  }
+  #sectionTalleres{
+      margin-top: 30px;
+      margin-bottom: 20px;
+      text-align: center;
+  }
+  #sectionTalleres p{
+    text-align: center;
+    color: #690bb9;
+    font-size: 25pt;
+  }
+  #sectionTalleres table{
+     
+  }
+  .talleresItem{
+      color: black;
+  }
+  .talleresItemTitle{
+      background: #690bb9;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      text-align: center;
+      font-family: nunito-sansB;
+      font-size: 10pt;
+  }
+  .talleresItemContent{
+      background: #01dac5;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      text-align: center;
+      font-size: 65pt;
+      font-family: nunito-sansB;
+      color: #690bb9;
+  }
+
+.col-half-offset{
+    margin-left:3.226666669%
+}
+.afterItems{
+    margin-top: 80px;
+}
+.plumasText{
+    background: #690bb9;
+    text-align: left;
+    padding-left: 25px;
+    padding-right: 40px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    font-size: 10pt;
+}
+.plumasBtn{
+    background: #01dac5;
+    color: #690bb9;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    bottom: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 0px;
+}
+.plumasTitle{
+    color: #690bb9;
+    font-family: nunito-sansB;
+    font-size: 25pt;
+    padding-bottom: 15px;
+}
+#footer{
+    background: #690bb9;
+    height: 279px;
+}
+.footerEnlaces{
+    padding-left: 65px;
+    padding-top: 35px;
+    font-size: 10pt;
+}
+.footerMap img{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.footerSocialItem{
+    padding-left: 38px;
+}
+.footerSocial{
+    padding-top: 30px;
+}
+.footerLocations{
+    padding-top: 78px;
+}
