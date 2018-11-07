@@ -249,3 +249,34 @@
     font-family: nunito-sansSBI;
     font-size: 20pt;
 }
+
+#headerT{
+    background: #6b0ab9;
+}
+.logo img{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.floatRight{
+    text-align:right;
+}
+.nav{
+    margin-right: 120px;
+    margin-top: 20px;
+}
+.nav a{
+    color: white;
+    font-family: nunito-sansB;
+    font-size: 15pt;
+    text-decoration: none;
+}
+.talleresTitle{
+    color: #6b0ab9;
+    font-family: nunito-sansB;
+    font-size: 20pt;
+}
+.talleresContent{
+    color: black;
+    font-family: nunito-sansSBI;
+    font-size: 12pt;
+}
