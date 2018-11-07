@@ -139,3 +139,23 @@ function ChangeMasterImg()
     imgeMasterL.src = "images/" + imgMasterL[indexMasterL];
     imgeMasterR.src = "images/" + imgMasterR[indexMasterR];
 }
+
+function ChangeLocation(x)
+{
+    var link;
+    switch(x)
+    {
+        case 1:
+            link = "images/mapa.jpg";
+        break;
+        case 2:
+        link = "images/isilMiraflores.png";
+        break;
+        case 3:
+        link = "images/isilMolina.png";
+        break;
+    }
+
+    var img = document.getElementById("imgLocation");
+    img.src = link;
+}
