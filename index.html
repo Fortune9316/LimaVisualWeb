@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="bootstrap-4/css/bootstrap-grid.min.css">
     <link rel="stylesheet" type="text/css" href="bootstrap-4/css/bootstrap-reboot.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="js/functionality.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -53,32 +54,36 @@
 
             <section id="sectionMasterClases">
                 <p>MASTER CLASES</p>
+                <div class="subTitle">Conferencias con destacados ponentes internacionales y<br>
+                nacionales que compartiran sus experiencias<br>
+            profesionales</div>
                 <div>
                         <div class="masterTable">
                                 <table>
                                         <tr style="width:100%;">
                                             <td class="midTablePh">
                                                 <!-- aqui va la foto -->
-                                                <img src="images/Francisco Ruiz_BN.jpg">
+                                                <img id="imgMasterLeft" src="images/Francisco Ruiz_BN.jpg">
                                             </td>
                                             <td class="midTable">
                                                 <table class="dataTable">
                                                     <tr>
-                                                        <td id="masterTitle">
+                                                        <td id="masterTitleL" class="masterTitle">
                                                             <!-- titulo -->
-                                                            Francisco Ruiz
+                                                            <div id="masterTitleL1" class="masterFTitle">INTELIGENCIA ALL</div>
+                                                            <div id="masterTitleL2" class="masterSTitle">Francisco Ruiz</div>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td id="masterData" style="text-align:left">
                                                             <!-- descripcion -->
-                                                            La sinonimia es una relación <br>
-                                                            semántica de identidad o <br>
-                                                            semejanza de significados <br>
-                                                            entre determinadas <br>
-                                                            expresiones <br>
-                                                            Día: 18/08 <br>
-                                                            Hora: 07:00 pm
+                                                            <div id="masterText">sinonimia es una relación
+                                                            semántica de identidad o
+                                                            semejanza de significados
+                                                            entre determinadas
+                                                            expresiones</div>
+                                                            <div id="masterDay">Día: 18/08</div>
+                                                            <div id="masterHour">Hora: 07:00 pm</div>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -101,10 +106,10 @@
                                                     <td style="width:60%;">
                                                     </td>
                                                     <td style="background:#690bb9; width:20%; padding-left: 20px; padding-top: 5px; padding-bottom: 5px;">
-                                                            <button style="background:#690bb9; border:0px;" type="button"><img style="width:25px;" src="images/btnLeft.png"></button>
+                                                            <button onclick="BtnLeftMasterL();" style="background:#690bb9; border:0px;" type="button"><img style="width:25px;" src="images/btnLeft.png"></button>
                                                     </td>
                                                     <td style="background:#690bb9; width:20%; text-align: right; padding-right: 20px; padding-top: 5px; padding-bottom: 5px;">
-                                                            <button style="background:#690bb9; border:0px;" type="button"><img style="width:25px;" src="images/btnRight.png"></button>
+                                                            <button onclick="BtnLeftMasterR();" style="background:#690bb9; border:0px;" type="button"><img style="width:25px;" src="images/btnRight.png"></button>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -120,26 +125,24 @@
                                         <tr style="width:100%;">
                                             <td class="midTablePh">
                                                 <!-- aqui va la foto -->
-                                                <img src="images/Sandra-Fuentes_BN.jpg">
+                                                <img id="imgMasterRight" src="images/Sandra-Fuentes_BN.jpg">
                                             </td>
                                             <td class="midTable">
                                                 <table class="dataTable">
                                                     <tr>
-                                                        <td id="masterTitle">
+                                                        <td id="masterTitleR" class="masterTitle">
                                                             <!-- titulo -->
-                                                            Sandra Fuentes
+                                                            <div id="masterTitleR1" class="masterFTitle">IDEAS QUE MARCAN</div>
+                                                            <div id="masterTitleR2" class="masterSTitle">Sandra Fuentes</div>
+                                                            
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td id="masterData" style="text-align:left">
                                                             <!-- descripcion -->
-                                                            La sinonimia es una relación <br>
-                                                            semántica de identidad o <br>
-                                                            semejanza de significados <br>
-                                                            entre determinadas <br>
-                                                            expresiones <br>
-                                                            Día: 18/08 <br>
-                                                            Hora: 07:00 pm
+                                                            <div id="masterText2">Una marca es tan buena como la idea que representa, y ésta debe sorprender, intrigar y explicar con un lenguaje simple</div>
+                                                                <div id="masterDay2">Día: 18/08</div>
+                                                                <div id="masterHour2">Hora: 07:00 pm</div>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -162,11 +165,11 @@
                                                     <tr >
                                                         <td style="width:60%;">
                                                         </td>
-                                                        <td style="background:#690bb9; width:20%; padding-left: 20px; padding-top: 5px; padding-bottom: 5px;">
-                                                                <button style="background:#690bb9; border:0px;" type="button"><img style="width:25px;" src="images/btnLeft.png"></button>
+                                                        <td style="background:#6b0ab9; width:20%; padding-left: 20px; padding-top: 5px; padding-bottom: 5px;">
+                                                                <button onclick="BtnRightMasterL();" style="background:#690bb9; border:0px;" type="button"><img style="width:25px;" src="images/btnLeft.png"></button>
                                                         </td>
-                                                        <td style="background:#690bb9; width:20%; text-align: right; padding-right: 20px; padding-top: 5px; padding-bottom: 5px;">
-                                                                <button style="background:#690bb9; border:0px;" type="button"><img style="width:25px;" src="images/btnRight.png"></button>
+                                                        <td style="background:#6b0ab9; width:20%; text-align: right; padding-right: 20px; padding-top: 5px; padding-bottom: 5px;">
+                                                                <button onclick="BtnRightMasterR();" style="background:#690bb9; border:0px;" type="button"><img style="width:25px;" src="images/btnRight.png"></button>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -183,10 +186,15 @@
 
             <section id="sectionTalleres">
                 <p>TALLERES</p>
+                <div class="subTitle">
+                    Actividades vivenciales, dictadas por nuestros docentes,<br>
+                    donde los asistentes podrán ser parte de la realización<br>
+                    de un proyecto.
+                </div>
                 
                 <div class="row" style="margin:auto; width:86%;">
   
-                    <div class="col-xs-2 talleresItem text-center">
+                    <div onclick="ChangeDay(0);" class="col-xs-2 talleresItem text-center">
                         <table>
                             <tr>
                                 <td class="talleresItemTitle">
@@ -200,7 +208,7 @@
                             </tr>
                         </table>
                     </div>
-                    <div class="col-xs-2 col-half-offset talleresItem text-center">
+                    <div onclick="ChangeDay(1);"  class="col-xs-2 col-half-offset talleresItem text-center">
                         <table>
                             <tr>
                                 <td class="talleresItemTitle">
@@ -214,7 +222,7 @@
                             </tr>
                         </table>
                     </div>
-                    <div class="col-xs-2 col-half-offset talleresItem text-center">
+                    <div onclick="ChangeDay(2);" class="col-xs-2 col-half-offset talleresItem text-center">
                         <table>
                             <tr>
                                 <td class="talleresItemTitle">
@@ -228,7 +236,7 @@
                             </tr>
                         </table>
                     </div>
-                    <div class="col-xs-2 col-half-offset talleresItem text-center">
+                    <div onclick="ChangeDay(3);" class="col-xs-2 col-half-offset talleresItem text-center">
                         <table>
                             <tr>
                                 <td class="talleresItemTitle">
@@ -242,7 +250,7 @@
                             </tr>
                         </table>
                     </div>
-                    <div class="col-xs-2 col-half-offset talleresItem text-center">
+                    <div onclick="ChangeDay(4);" class="col-xs-2 col-half-offset talleresItem text-center">
                         <table>
                             <tr>
                                 <td class="talleresItemTitle">
@@ -262,7 +270,7 @@
                 <div class="row afterItems">
 
                     <div class="col">
-                        <img style="width:70%;" src="images/ameliaRuiz.png">
+                        <img id="imgTaller" style="width:70%;" src="images/talleres/ameliaRuiz.png">
                     </div>
                     <div class="col">
                         <table>
@@ -273,18 +281,19 @@
                             </tr>
                             <tr>
                                 <td class="plumasTitle">
-                                    Plumas y papel
+                                    <p id="titleTaller">Plumas y papel</p>
+                                    <div id="subTitleTaller" class="purpleItalic">Amelia Ruiz</div>
                                 </td>
                             </tr>
                             <tr>
                                 <table style="width:100%;">
                                     <tr >
   
-                                        <td style="background:#01dac5; width:20%; padding-right: 20px; padding-top: 5px; padding-bottom: 5px;">
-                                                <button style="background:#01dac5; border:0px;" type="button"><img style="width:25px;" src="images/btnLeftPur.png"></button>
+                                        <td style="background:#2dfffe; width:20%; padding-right: 20px; padding-top: 5px; padding-bottom: 5px;">
+                                                <button id="btnTallerLeft" onclick="ChangeTallerInfoLeft();" style="background:#2dfffe; border:0px;" type="button"><img style="width:25px;" src="images/btnLeftPur.png"></button>
                                         </td>
-                                        <td style="background:#01dac5; width:20%; text-align: right; padding-right: 20px; padding-top: 5px; padding-bottom: 5px;">
-                                                <button style="background:#01dac5; border:0px;" type="button"><img style="width:25px;" src="images/btnRightPur.png"></button>
+                                        <td style="background:#2dfffe; width:20%; text-align: right; padding-right: 20px; padding-top: 5px; padding-bottom: 5px;">
+                                                <button id="btnTallerRight" onclick="ChangeTallerInfoRight();" style="background:#2dfffe; border:0px;" type="button"><img style="width:25px;" src="images/btnRightPur.png"></button>
                                         </td>
                                         <td style="width:60%;">
                                             </td>
@@ -295,11 +304,8 @@
                                 <table>
                                         <tr class="plumasText">
                                             <td class="plumasText">
-                                                La sinonimia es una relación semántica de identidad <br>
-                                                o semejanza de significados entre determinadas<br>
-                                                expresiones o palabras (llamadas sinónimos). Por<br>
-                                                tanto, sinónimos son expresiones o palabras que<br>
-                                                tienen un significado similar
+                                                <p id="textTaller">Workshop de caligrafia Graffiti, donde aprendemos a descodificar y Abstraer la estructuras de las letras coló la cultura del graffiti lo ha hecho al rededor del mundo, de donde nació este estilo caligráfico y review del caso barraLima. 
+                                                </p>
                                             </td>
                                         </tr>
                                         <tr>
@@ -323,9 +329,12 @@
                         <a href="#"><p>Contáctanos</p></a>
                         <a href="#"><p>Master Clases</p></a>
                         <a href="#"><p>Talleres</p></a>
+                        <img src="images/cannonLogo.png">
+                        <img src="images/lenovoLogo.png">
                     </div>
-                    <div class="col-2">
-
+                    <div class="col-2 footerLogos">
+                        <img src="images/faberLogo.png">
+                        <img src="images/comercioLogo.png">
                     </div>
                     <div class="col-5 footerMap">
                         <img src="images/mapa.jpg">
@@ -349,6 +358,7 @@
                             <p>La Molina</p>
                             <p>San Isidro</p>
                             <p>Miraflores</p>
+                            <img src="images/isilLogo.png">
                         </div>
                     </div>
                 </div>

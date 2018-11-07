@@ -5,6 +5,7 @@
 }
 
 @font-face{ font-family: nunito-sansBI; src: url('fonts/NunitoSans-BlackItalic.ttf');}
+@font-face{ font-family: nunito-sansL; src: url('fonts/NunitoSans-Light.ttf');}
 @font-face{ font-family: nunito-sansSBI; src: url('fonts/NunitoSans-LightItalic.ttf');}
 @font-face{ font-family: nunito-sansBa; src: url('fonts/NunitoSans-Black.ttf');}
 @font-face{font-family: nunito-sansB; src: url('fonts/NunitoSans-Bold.ttf');}
@@ -20,7 +21,7 @@
     position: relative;
 }
 #headerBanner{
-    background:#690bb9;
+    background:#6b0ab9;
     width: 445px;
     height: 100%;
 }
@@ -43,7 +44,7 @@
     font-size: 40pt;
 }
 .headerSubTitleText{
-    color: #ffaa01;
+    color: #f9c333;
     font-size: 27pt;
     font-family: nunito-sansBa;
 }
@@ -52,7 +53,7 @@
 }
 #sectionMasterClases p{
     text-align: center;
-    color: #690bb9;
+    color: #6b0ab9;
     font-size: 25pt;
 }
 .masterTable{
@@ -73,26 +74,43 @@
     width: 100%;
     text-align: center;
 }
-#masterTitle{
-    color: #690bb9;
+.masterFTitle{
+    color: #6b0ab9;
+    font-size: 17pt;
+    padding-left: 35px;
+}
+.masterSTitle{
+    color: #6b0ab9;
+    font-size: 13pt;
+    padding-left: 35px;
+    font-family: nunito-sansSBI;
+}
+.masterTitle{
+    color: #6b0ab9;
     font-family: nunito-sansB;
     font-size: 25pt;
+    text-align: left;
 }
 #masterData{
-    color:white;
-    background: #01dac5;
+    color:#6b0ab9;
+    background: #2dfffe;
+    height: 170px;
     padding-left: 40px;
     padding-right: 30px;
     padding-top: 30px;
     font-size: 10.5pt;
 }
+#masterData div{
+    color: #6b0ab9;
+}
+
 #masterInsBtn{
-    background: #01dac5;
+    background: #2dfffe;
     padding-top: 33px;
     padding-bottom: 33px;
 }
 #masterInsBtn button{
-    color: #690bb9;
+    color: #6b0ab9;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 4px;
@@ -120,7 +138,7 @@
   }
   #sectionTalleres p{
     text-align: center;
-    color: #690bb9;
+    color: #6b0ab9;
     font-size: 25pt;
   }
   #sectionTalleres table{
@@ -130,7 +148,7 @@
       color: black;
   }
   .talleresItemTitle{
-      background: #690bb9;
+      background: #6b0ab9;
       padding-left: 30px;
       padding-right: 30px;
       padding-top: 5px;
@@ -140,7 +158,7 @@
       font-size: 10pt;
   }
   .talleresItemContent{
-      background: #01dac5;
+      background: #2dfffe;
       padding-left: 30px;
       padding-right: 30px;
       padding-top: 20px;
@@ -148,7 +166,7 @@
       text-align: center;
       font-size: 65pt;
       font-family: nunito-sansB;
-      color: #690bb9;
+      color: #6b0ab9;
   }
 
 .col-half-offset{
@@ -158,7 +176,7 @@
     margin-top: 80px;
 }
 .plumasText{
-    background: #690bb9;
+    background: #6b0ab9;
     text-align: left;
     padding-left: 25px;
     padding-right: 40px;
@@ -166,9 +184,14 @@
     padding-bottom: 50px;
     font-size: 10pt;
 }
+.plumasText p{
+    color: white !important;
+    font-size: 10pt !important;
+    text-align: left !important;
+}
 .plumasBtn{
-    background: #01dac5;
-    color: #690bb9;
+    background: #2dfffe;
+    color: #6b0ab9;
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
     bottom: 15px;
@@ -179,19 +202,23 @@
     border: 0px;
 }
 .plumasTitle{
-    color: #690bb9;
+    color: #6b0ab9;
     font-family: nunito-sansB;
     font-size: 25pt;
     padding-bottom: 15px;
+    text-align: left;
 }
 #footer{
-    background: #690bb9;
-    height: 279px;
+    background: #6b0ab9;
+    height: 300px;
 }
 .footerEnlaces{
     padding-left: 65px;
     padding-top: 35px;
     font-size: 10pt;
+}
+.footerEnlaces img{
+    width: 90%;
 }
 .footerMap img{
     padding-left: 20px;
@@ -204,5 +231,24 @@
     padding-top: 30px;
 }
 .footerLocations{
-    padding-top: 78px;
+    padding-top: 20px;
+}
+.footerLogos{
+    padding-top: 205px;
+    padding-left: 50px;
+}
+.footerLogos img{
+    width: 90%;
+}
+.subTitle{
+    text-align: center;
+    color: #f9c333;
+    font-size: 13pt;
+    margin-bottom: 15px;
+    font-family: nunito-sansL;
+}
+.purpleItalic{
+    color: #6b0ab9;
+    font-family: nunito-sansSBI;
+    font-size: 20pt;
 }
