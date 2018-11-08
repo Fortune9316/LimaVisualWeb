@@ -252,6 +252,7 @@
 
 #headerT{
     background: #6b0ab9;
+    padding-bottom: 10px;
 }
 .logo img{
     margin-left: 20px;
@@ -279,4 +280,38 @@
     color: black;
     font-family: nunito-sansSBI;
     font-size: 12pt;
+}
+.talleresSubTitle{
+    color: #f9c333;
+    font-family: nunito-sansSBI;
+    font-size: 13pt;
+}
+.inputField{
+    width: 100%;
+    height: 35px;
+    background: #2dfffe;
+    color: #6b0ab9;
+    font-family: nunito-sansL;
+    margin-bottom: 20px;
+}
+.inputField h6{
+    padding-top: 10px;
+    margin-left: 10px;
+}
+#section{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.picName{
+    margin-top: 20px;
+    color: #6b0ab9;
+    font-family: nunito-sansL;
+    font-size: 20pt;
+}
+.btnInsc{
+    width: 100%;
+    background: #f9c333;
+    border-radius: 5px;
+    color: #6b0ab9;
+    font-size: 23px;
 }
