@@ -62,16 +62,19 @@
     margin-left: 7%;
 }
 .masterTable .midTablePh{
-    width:34.2%;
+    width:35.4%;
+    height: 227px;
 }
 .masterTable td img{
     width: 100%;
 }
 .masterTable .midTable{
-    width: 66.5%;
+    width: 64.5%;
+    height: 227px;
 }
 .dataTable{
     width: 100%;
+    height: 100%;
     text-align: center;
 }
 .masterFTitle{
@@ -97,7 +100,7 @@
     height: 170px;
     padding-left: 40px;
     padding-right: 30px;
-    padding-top: 30px;
+    padding-top: 20px;
     font-size: 10.5pt;
 }
 #masterData div{
@@ -242,7 +245,7 @@
     color: #f9c333;
     font-size: 13pt;
     margin-bottom: 15px;
-    font-family: nunito-sansL;
+    font-family: nunito-sansB;
 }
 .purpleItalic{
     color: #6b0ab9;
@@ -314,4 +317,16 @@
     border-radius: 5px;
     color: #6b0ab9;
     font-size: 23px;
+}
+#masterDay{
+    font-family: nunito-sansB;
+}
+#masterHour{
+    font-family: nunito-sansB;
+}
+#masterDay2{
+    font-family: nunito-sansB;
+}
+#masterHour2{
+    font-family: nunito-sansB;
 }

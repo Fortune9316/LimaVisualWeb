@@ -11,8 +11,8 @@ var textTalleres = ["Workshop de caligrafia Graffiti, donde aprendemos a descodi
 "En el taller se conocerán herramientas para desarrollar la creatividad mediante las técnicas del pensamiento lateral: Brainstorming; Técnicas de provocación: Palabra Aleatoria, el escape, la piedra en el camino; SCAMPER, etc.",
 "Crear un guion de radio donde se incluya los tres pasos para lograr un comercial divertido; situación, problema y satisfacción. Como darle vuelta al brief para lograr una idea que encaje con las necesidades de la marca."];
 
-var imgMasterL = ["Francisco Ruiz_BN.jpg","alejandro.jpg"];
-var imgMasterR = ["Sandra-Fuentes_BN.jpg","susana.jpg"];
+var imgMasterL = ["FranciscoRuiz.png","AlejandroCespedes.png"];
+var imgMasterR = ["SandraFuentes.png","SusanaCastillo.png"];
 
 var titleMasterL1 = ["INTELIGENCIA AIII","SOCIAL MEDIA"]
 var titleMasterL2 = ["Francisco Ruiz", "Alejandro C."];
