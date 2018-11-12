@@ -39,6 +39,7 @@ var indexDay = 0; //0 lunes 1 martes 2 miercoles 3 jueves 4 viernes
 
 var indexMasterL = 0;
 var indexMasterR = 0;
+window.onload = function () {ChangeLV(1); }
 function ChangeTallerInfoLeft()
 {
     if(indexTaller>0)
@@ -158,4 +159,28 @@ function ChangeLocation(x)
 
     var img = document.getElementById("imgLocation");
     img.src = link;
+}
+function ChangeLV(x){
+    $('#lvVideo').css('display','none');
+    $('#lvQue').css('display','none');
+    $('#lvMaster').css('display','none');
+    $('#lvTaller').css('display','none');
+    $('#lvHorario').css('display','none');
+    switch(x){
+        case 1:
+            $('#lvVideo').show();
+        break;
+        case 2:
+            $('#lvQue').show();
+        break;
+        case 3:
+            $('#lvMaster').show();
+        break;
+        case 4:
+            $('#lvTaller').show();
+        break;
+        case 5:
+            $('#lvHorario').show();
+        break;
+    }
 }

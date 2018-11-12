@@ -13,7 +13,14 @@
 #content{
     width: 1100px;
     margin: 0 auto;
-    background:#fff5ff;
+    /*background:#fff5ff;*/
+}
+#background{
+    background: #fff5ff;
+    width: 100%;
+    height: 2400px;
+    position: absolute;
+    z-index: -2;
 }
 #header{
     width: 100%;
@@ -22,8 +29,9 @@
 }
 #headerBanner{
     background:#6b0ab9;
-    width: 445px;
-    height: 100%;
+    /*width: 445px;*/
+    width: 100%;
+    height: 634px;
 }
 .botomTable{
     position: absolute;
@@ -42,6 +50,25 @@
     font-family: nunito-sansBI;
     color:#01dac5;
     font-size: 40pt;
+}
+.headerButton{
+    background: #6b0ab9;
+    border: 0px;
+    color: #2dfffe;
+}
+.headerButtons{
+    background: #6b0ab9;
+    border: 0px;
+}
+#headerSpace{
+    
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#headerSpace video{
+   width: 100%;
+   transform: scale(3);
 }
 .headerSubTitleText{
     color: #f9c333;
@@ -329,4 +356,8 @@
 }
 #masterHour2{
     font-family: nunito-sansB;
+}
+.circulo{
+    position:absolute;
+    width: 50%;
 }
