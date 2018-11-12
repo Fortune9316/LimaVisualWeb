@@ -361,3 +361,12 @@
     position:absolute;
     width: 50%;
 }
+.formStyle td h6{
+    color: #6b0ab9;
+}
+.formStyle td input{
+    margin-left: 20px;
+    color: black;
+    background: #2dfffe;
+    border: 0;
+}
