@@ -319,14 +319,12 @@
 .inputField{
     width: 100%;
     height: 35px;
-    background: #2dfffe;
     color: #6b0ab9;
     font-family: nunito-sansL;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .inputField h6{
     padding-top: 10px;
-    margin-left: 10px;
 }
 #section{
     margin-top: 20px;
@@ -365,8 +363,23 @@
     color: #6b0ab9;
 }
 .formStyle td input{
-    margin-left: 20px;
+    width: 500px;
+    height: 30px;
     color: black;
-    background: #2dfffe;
+    background: #02dffe;
     border: 0;
+}
+.formStyle td select{
+    width: 500px;
+    height: 30px;
+    color: black;
+    background: #02dffe;
+    border: 0;
+    border-radius: 0;
+}
+.yellow{
+    color: #f9c333;
+}
+.textInfo{
+    color: #6b0ab9;
 }
