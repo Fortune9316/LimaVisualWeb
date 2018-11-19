@@ -22,9 +22,9 @@ var contentMasterText = ["No es lo mismo trabajar en la industria de la publicid
 "Esta charla es acerca de como Instagram, con un billón de usuarios activos diarios,y que pronto se convertirá en la red social más importante"];
 var contentMasterText2 = ["Una marca es tan buena como la idea que representa, y ésta debe sorprender, intrigar y explicar con un lenguaje simple",
 "Cada Mundial de Fútbol es una nueva ventana para encontrarnos con los avances tecnológicos que aportan en cada cobertura periodística"];
-var contentMasterDay = ["Día: 18/08","Día: 19/08"];
-var contentMasterDay2= ["Día: 18/08","Día: 19/08"];
-var contentMasterHour = ["Hora: 7:00 pm","Hora: 7:00 pm"];
+var contentMasterDay = ["&#9658;<span style=\"color:#f9c333 !important;\">Día</span> 18/08</div>","&#9658;<span style=\"color:#f9c333 !important;\">Día</span> 19/08"];
+var contentMasterDay2= ["&#9658;<span style=\"color:#f9c333 !important;\">Día</span> 18/08</div>","&#9658;<span style=\"color:#f9c333 !important;\">Día</span> 19/08"];
+var contentMasterHour = ["&#9658; <span style=\"color:#f9c333 !important;\">Hora:</span> 07:00 pm","&#9658; <span style=\"color:#f9c333 !important;\">Hora:</span> 07:00 pm"];
 var titleMasterR = ["Sandra Fuentes","Susana Castillo"];
 var ordenLunes = [0,1,2,3,4,5,6,7];
 var ordenMartes = [2,3,1,4,7,0,5,6];
@@ -39,7 +39,7 @@ var indexDay = 0; //0 lunes 1 martes 2 miercoles 3 jueves 4 viernes
 
 var indexMasterL = 0;
 var indexMasterR = 0;
-window.onload = function () {ChangeLV(1); }
+window.onload = function () {ChangeLV(1); $('#insConfirmText').css('display','none');}
 function ChangeTallerInfoLeft()
 {
     if(indexTaller>0)
@@ -184,3 +184,13 @@ function ChangeLV(x){
         break;
     }
 }
+function Inscribirse()
+{
+    $('#fieldNA').css('display','none');
+    $('#fieldDNI').css('display','none');
+    $('#fieldMAil').css('display','none');
+    $('#fieldTP').css('display','none');
+    $('#insConfirmText').show();
+}
+
+

@@ -57,13 +57,14 @@
                 <p class="textInfo">&#9658; <span class="yellow">Campus:</span> Miraflores</p>
             </div>
             
-            <button class="btnInsc" type="button">INSCRIBIRSE</button>
+            <button style="background:url('images/btnInscribirse.png') no-repeat; height: 58px;" onclick="Inscribirse();" class="btnInsc" type="button">   </button>
         </div>
             
             <div class="col-md-2">
 
             </div>
             <div class="col-md-5">
+                
                 <table>
                     <tr>
                         <td class="talleresTitle">
@@ -89,7 +90,15 @@
                     </tr>
                     <tr>
                         <td>
-                            <div class="inputField">
+                                <div style="width:100%; text-align:center" id="insConfirmText">
+                                        <p style="font-size:30pt; color:#6b0ab9;">¡Ya estás <br> Inscrito!</p>
+                                    </div>
+                        </td>
+                            
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id="fieldNA" class="inputField">
                                     <table>
                                             <tr class="formStyle">
                                                 <td><h6>Nombre y Apellidos</h6></td>
@@ -104,7 +113,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <div class="inputField">
+                            <div id="fieldDNI" class="inputField">
                                 <table>
                                     <tr class="formStyle">
                                         <td><h6>DNI</h6></td>
@@ -119,7 +128,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <div class="inputField">
+                            <div id="fieldMAil" class="inputField">
                                 <table>
                                     <tr class="formStyle">
                                         <td><h6>Correo</h6></td>
@@ -134,7 +143,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <div class="inputField">
+                            <div id="fieldTP" class="inputField">
                                 <table>
                                     <tr class="formStyle">
                                         <td><h6>Tipo de Público</h6></td>
@@ -165,28 +174,100 @@
 
 
         <footer id="footer">
-            <div class="container row">
+            <div style="padding-bottom:30px;" class="container row">
                 <div class="col-md-1">
                     
                 </div>
                 <div class="col-md-2">
 
+                    <table>
+                        <tr >
+                            <td>
+                                <img style="padding-bottom:50px; padding-top:50px;" src="images/lvLogoWhite.png" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <img src="images/facebookBtn.png">
+                                    </td>
+                                    <td>
+                                        <img src="images/instagramBtn.png">
+                                    </td>
+                                    <td>
+                                        <img src="images/twitterBtn.png">
+                                    </td>
+                                </tr>
+                            </table>
+                        </tr>
+                    </table>
+
                 </div>
-                <div class="col-md-2">
+                <div style="padding-top:50px; padding-left:50px;" class="col-md-2">
+                    <p>Lima Visual</p>
+                    <p>Master Clases</p>
+                    <p>Talleres</p>
 
                 </div>
                 <div class="col-md-2">
 
                 </div>
                 <div class="col-md-4">
+                    <table>
+                        <tr>
+                            <td>
+                                <img id="imgLocation" src="images/isilMolina.png">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                    <table style="width:100%; text-align:center;">
+                                        <tr class="footerLocation">
+                                                <td >
+                                                        <a onclick="ChangeLocation(2)" style="text-decoration:none; color: #f9c333;" href="#">Miraflores</a>
+                                                    </td>
+                                                    <td>
+                                                        <a onclick="ChangeLocation(3)" style="text-decoration:none; color: #f9c333;" href="#">La Molina</a>
+                                                    </td>
+                                                    <td>
+                                                        <a onclick="ChangeLocation(1)" style="text-decoration:none; color: #f9c333;" href="#">San Isidro</a>
+                                                    </td>
+                                        </tr>
 
+                                    </table>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="col-md-1">
 
                 </div>
-                <div style="background:black; height:30px;" class="col-md-12">
-
-                </div>
+                
+            </div>
+            <div style="background:black; height:50px; text-align: center;">
+                <table style="margin:auto;">
+                    <tr class="footLogos">
+                        <td>
+                            <img src="images/isil2Logo.png"/>
+                        </td>
+                        <td>
+                            <img src="images/stabiloLogo.png"/>
+                        </td>
+                        <td>
+                            <img src="images/cannonLogo.png"/>
+                        </td>
+                        <td>
+                            <img src="images/comercioLogo.png"/>
+                        </td>
+                        <td>
+                            <img src="images/lenovoLogo.png"/>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div style="text-align:center; font-size: 15pt; color: #2dfffe;">
+                <p style="color:#2dfffe;">Copyrigth 2018 . Lima Visual</p>
             </div>
         </footer>
 
