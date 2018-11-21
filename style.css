@@ -10,11 +10,7 @@
 @font-face{ font-family: nunito-sansBa; src: url('fonts/NunitoSans-Black.ttf');}
 @font-face{font-family: nunito-sansB; src: url('fonts/NunitoSans-Bold.ttf');}
 
-#content{
-    width: 1100px;
-    margin: 0 auto;
-    /*background:#fff5ff;*/
-}
+
 #background{
     background: #fff5ff;
     width: 100%;
@@ -22,11 +18,7 @@
     position: absolute;
     z-index: -2;
 }
-#header{
-    width: 100%;
-    height: 634px;
-    position: relative;
-}
+
 #headerBanner{
     background:#6b0ab9;
     /*width: 445px;*/
@@ -82,6 +74,7 @@
     text-align: center;
     color: #6b0ab9;
     font-size: 25pt;
+    font-family: nunito-sansB;
 }
 .masterTable{
     width: 40%;
@@ -127,7 +120,7 @@
     height: 170px;
     padding-left: 40px;
     padding-right: 30px;
-    padding-top: 20px;
+    padding-top: 5px;
     font-size: 10.5pt;
 }
 #masterData div{
@@ -171,6 +164,7 @@
     text-align: center;
     color: #6b0ab9;
     font-size: 25pt;
+    font-family: nunito-sansB;
   }
   .talleresItem{
       color: black;
@@ -205,6 +199,7 @@
     margin-top: 80px;
 }
 .plumasText{
+    width: 100%;
     background: #2dfffe;
     text-align: left;
     padding-left: 25px;
@@ -322,15 +317,27 @@
 }
 #masterDay{
     font-family: nunito-sansB;
+    color: #2dfffe !important;
 }
 #masterHour{
     font-family: nunito-sansB;
+    color: #2dfffe !important;
+}
+#masterCampus{
+    font-family: nunito-sansB;
+    color: #2dfffe !important;
+}
+#masterCampus2{
+    font-family: nunito-sansB;
+    color: #2dfffe !important;
 }
 #masterDay2{
     font-family: nunito-sansB;
+    color: #2dfffe !important;
 }
 #masterHour2{
     font-family: nunito-sansB;
+    color: #2dfffe !important;
 }
 .circulo{
     position:absolute;
@@ -378,18 +385,78 @@
 #masterText2{
     color: #f9c333 !important;
 }
-#masterDay{
-    color: #2dfffe !important;
+.plumasBackground{
+    background: #2dfffe;
+    height: 250px;
+    position: relative;
+    z-index: -2;
 }
-#masterDay2{
-    color: #2dfffe !important;
+.tallerStyle{
+    text-align: left;
+    font-family: nunito-sansB;
+    color:#6b0ab9;
 }
-#masterHour{
-    color: #2dfffe !important;
-}
-#masterHour2{
-    color: #2dfffe !important;
-}
-#masterCampus{
-    color: #2dfffe !important;
-}
+#mainDiv {
+    width: 120px;
+    position: relative;
+  }
+  
+  #borderLeft {
+    border-left: 2px solid #f51c40;
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+  }
+  #borderLefBot{
+    border-bottom: 2px solid #f51c40;
+    position: absolute;
+    bottom: 50%;
+  }
+  
+  .custom-toggler.navbar-toggler {
+    border-color: rgb(255,102,203);
+  } 
+
+  @media screen and (min-width: 601px){
+    .headDivMov{
+        display: none;
+    }
+    #header{
+        width: 100%;
+        height: 634px;
+        position: relative;
+    }
+    #lvVideoMob{
+        display: none;
+    }
+    #content{
+        width: 1100px;
+        margin: 0 auto;
+        /*background:#fff5ff;*/
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .headDiv{
+        display: none;
+    }
+    .headDivMov{
+        display: block;
+    }
+    #header{
+        width: 100%;
+        height: 340px;
+        position: relative;
+    }
+    #lvVideoMob{
+        display: block;
+    }
+    #sectionMasterClases{
+        margin-top: 140px;
+        width: 100%;
+    }
+    #content{
+        width: 100%;
+        margin: 0 auto;
+        /*background:#fff5ff;*/
+    }
+  }

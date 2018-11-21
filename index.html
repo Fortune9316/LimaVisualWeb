@@ -18,7 +18,44 @@
     <div id="content">
         
             <header id="header">
-                <div class="row">
+                
+                <nav style="background:#6b0ab9 !important; " class="navbar navbar-expand-lg navbar-dark bg-light headDivMov">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <a style="padding-left:0px; color:#f9c333 !important;" class="navbar-brand" href="#">INGRESO LIBRE</a>
+                <a class="navbar-brand " href="#"><img style="width:80%;" src="images/lvLogo.png"></a>
+                
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">¿Qué es Lima Visual? <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Master Clases</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Talleres</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Horarios de Buses</a>
+                    </li>
+                    </ul>
+                    
+                </div>
+
+                
+                </nav>
+                <div id="lvVideoMob" style="height:100%; display: true; overflow: hidden;">
+                        <video width="800px" height="100%" controls autoplay>
+                        <source src="images/y2mate.com - paramore_hard_times_official_video_AEB6ibtdPZc_360p.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                        </video>
+                </div>
+                
+                    
+                <div class="row headDiv">
                         <div class="col-md-4" id="headerBanner">
                                 <table class="botomTable">
                                     <tr>
@@ -76,7 +113,9 @@
             </header>
 
             <section id="sectionMasterClases">
-                <p>MASTER CLASES</p>
+                <div style="width:100%; text-align: center; margin-top: 10px; margin-bottom: 10px;">
+                        <img src="images/MasterTitle.png"/>
+                </div>
                 <div class="subTitle">Conferencias con destacados ponentes internacionales y<br>
                 nacionales que compartiran sus experiencias<br>
             profesionales</div>
@@ -88,7 +127,7 @@
                                                 <!-- aqui va la foto -->
                                                 
                                                 <img id="imgMasterLeft" style="z-index:2;" src="images/FranciscoRuiz.png">
-                                                <img class="circulo" style="width:10%; top: 735px; left: 200px; z-index: -1;" src="images/Circulo-01.png">
+                                                <img class="circulo" style="width:10%; top: 715px; left: 370px; z-index: -1;" src="images/Circulo-01.png">
                                             </td>
                                             <td class="midTable">
                                                 <table class="dataTable">
@@ -109,6 +148,8 @@
                                                             expresiones</div>
                                                             <div id="masterDay">&#9658; <span style="color:#f9c333 !important;">Día</span> 18/08</div>
                                                             <div id="masterHour">&#9658; <span style="color:#f9c333 !important;">Hora:</span> 07:00 pm</div>
+                                                            <div id="masterCampus">&#9658; <span style="color:#f9c333 !important;">Campus:</span> Miraflores</div>
+                                                            
                                                             
                                                         </td>
                                                     </tr>
@@ -152,7 +193,7 @@
                                             <td class="midTablePh">
                                                 <!-- aqui va la foto -->
                                                 <img id="imgMasterRight" src="images/SandraFuentes.png">
-                                                <img class="circulo" style="width:10%; top: 1125px; right: 200px; z-index: -1;" src="images/Circulo-01.png">
+                                                <img class="circulo" style="width:10%; top: 1090px; right: 360px; z-index: -1;" src="images/Circulo-01.png">
                                             </td>
                                             <td class="midTable">
                                                 <table class="dataTable">
@@ -170,7 +211,7 @@
                                                             <div id="masterText2">Una marca es tan buena como la idea que representa, y ésta debe sorprender, intrigar y explicar con un lenguaje simple</div>
                                                                 <div id="masterDay2">&#9658; <span style="color:#f9c333 !important;">Día:</span> 18/08</div>
                                                                 <div id="masterHour2">&#9658; <span style="color:#f9c333 !important;">Hora:</span> 07:00 pm</div>
-                                                                
+                                                                <div id="masterCampus2">&#9658; <span style="color:#f9c333 !important;">Campus:</span> Miraflores</div>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -213,7 +254,9 @@
             </div>
 
             <section id="sectionTalleres">
-                <p>TALLERES</p>
+                    <div style="width:100%; text-align: center; margin-top: 10px; margin-bottom: 10px;">
+                            <img src="images/TalleresTitle.png"/>
+                    </div>
                 <div class="subTitle">
                     Actividades vivenciales, dictadas por nuestros docentes,<br>
                     donde los asistentes podrán ser parte de la realización<br>
@@ -295,60 +338,66 @@
 
                 </div>
 
-                <div class="row afterItems">
-                        
-                    <div class="col">
-                            <img class="circulo" style="width:30%; bottom: 310px; left: 10px; z-index: -1;" src="images/Circulo-01.png">
-                        <img id="imgTaller" style="width:70%;" src="images/talleres/ameliaRuiz.png">
+              
+
+                <div style="margin-left: 0px; margin-right: 0px; margin-top: 130px;" class="row">
+
+                    <div class="col-md-6">
+                            <div style="position:absolute; width:100%; top: 0px; right: -45px;">
+                                <img class="circulo" style="width:30%; bottom: 140px; left: 4px; z-index: -1;" src="images/Circulo-01.png">
+                                <img id="imgTaller" style="width:70%;" src="images/talleres/ameliaRuiz.png">
+                            </div>
                     </div>
-                    <div class="col">
-                        <table>
-                            <tr>
-                                <td style="padding-bottom: 45px;">
-                                    
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="plumasTitle">
-                                    <p id="titleTaller" style="text-align:left !important;">Plumas y papel</p>
-                                    <div id="subTitleTaller" class="purpleItalic">Amelia Ruiz</div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <table style="width:100%;">
-                                    <tr >
-  
-                                        <td style="background:#2dfffe; width:20%; padding-right: 20px; padding-top: 5px; padding-bottom: 5px;">
-                                                <button id="btnTallerLeft" onclick="ChangeTallerInfoLeft();" style="background:#2dfffe; border:0px;" type="button"><img style="width:25px;" src="images/btnLeftPur.png"></button>
+                    <div class="col-md-6 plumasTitle">
+                            <p id="titleTaller" style="text-align:left !important;">Plumas y papel</p>
+                            <div id="subTitleTaller" class="purpleItalic">Amelia Ruiz</div>
+                    </div>
+                    <div class="col-md-2">
+
+                    </div>
+                    <div class="col-md-4 plumasBackground">
+
+                    </div>
+                    <div class="col-md-6 plumasBackground">
+                            <table >
+                                    <tr class="plumasText">
+                                        <td class="plumasText">
+                                            <p id="textTaller">Workshop de caligrafia Graffiti, donde aprendemos a descodificar y Abstraer la estructuras de las letras coló la cultura del graffiti lo ha hecho al rededor del mundo, de donde nació este estilo caligráfico y review del caso barraLima. 
+                                            </p>
+                                            <div id="tallerDay" class="tallerStyle">&#9658; <span style="color:#f9c333 !important;">Día</span> Lunes 21 de Julio</div>
+                                            <div id="tallerHour" class="tallerStyle">&#9658; <span style="color:#f9c333 !important;">Hora:</span> 08:30 am - 5:00 pm</div>
+                                            <div id="tallerCampus" class="tallerStyle">&#9658; <span style="color:#f9c333 !important;">Campus:</span> La Molina</div>
+                                            <button class="plumasBtn"type="button">INSCRIBIRSE</button>
                                         </td>
-                                        <td style="background:#2dfffe; width:20%; text-align: right; padding-right: 20px; padding-top: 5px; padding-bottom: 5px;">
-                                                <button id="btnTallerRight" onclick="ChangeTallerInfoRight();" style="background:#2dfffe; border:0px;" type="button"><img style="width:25px;" src="images/btnRightPur.png"></button>
-                                        </td>
-                                        <td style="width:60%;">
-                                            </td>
                                     </tr>
-                                </table>
-                            </tr>
-                            <tr>
-                                <table>
-                                        <tr class="plumasText">
-                                            <td class="plumasText">
-                                                <p id="textTaller">Workshop de caligrafia Graffiti, donde aprendemos a descodificar y Abstraer la estructuras de las letras coló la cultura del graffiti lo ha hecho al rededor del mundo, de donde nació este estilo caligráfico y review del caso barraLima. 
-                                                </p>
-                                                <button class="plumasBtn"type="button">INSCRIBIRSE</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td >
-                                                    
-                                            </td>
-                                        </tr>
-                                </table>
-                            </tr>
-                            
-                        </table>
+                                    <tr>
+                                            
+                                    </tr>
+                            </table>
+                    </div>
+                    <div class="col-md-6">
+
+                    </div>
+                    <div style=" position: relative; right: -14px;" class="col-md-6">
+
+                            <table style="width: 100%;">
+                                    <tr>
+                                        <td style="width:80%;">
+
+                                        </td>
+                                        <td style="background:#6b0ab9; width:10%; padding-left: 20px; padding-right: 20px; padding-top: 5px; padding-bottom: 5px;">
+                                                <button id="btnTallerLeft" onclick="ChangeTallerInfoLeft();" style="background:#6b0ab9; border:0px;" type="button"><img style="width:100%;" src="images/btnLeft.png"></button>
+                                        </td>
+                                        <td style="background:#6b0ab9; width:10%; text-align: right; padding-left: 20px; padding-right: 20px; padding-top: 5px; padding-bottom: 5px;">
+                                                <button id="btnTallerRight" onclick="ChangeTallerInfoRight();" style="background:#6b0ab9; border:0px;" type="button"><img style="width:100%" src="images/btnRight.png"></button>
+                                        </td>
+                                        
+                                    </tr>
+                            </table>
                     </div>
                 </div>
+
+               
             </section>
 
             <footer id="footer">
