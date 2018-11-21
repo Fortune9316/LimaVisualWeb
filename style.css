@@ -76,53 +76,20 @@
     font-size: 25pt;
     font-family: nunito-sansB;
 }
-.masterTable{
-    width: 40%;
-    float:left;
-    margin-left: 7%;
-}
-.masterTable .midTablePh{
-    width:35.4%;
-    height: 227px;
-}
+
+
 .masterTable td img{
     width: 100%;
 }
-.masterTable .midTable{
-    width: 64.5%;
-    height: 227px;
-}
+
 .dataTable{
     width: 100%;
     height: 100%;
     text-align: center;
 }
-.masterFTitle{
-    color: #6b0ab9;
-    font-size: 17pt;
-    padding-left: 35px;
-}
-.masterSTitle{
-    color: #6b0ab9;
-    font-size: 13pt;
-    padding-left: 35px;
-    font-family: nunito-sansSBI;
-}
-.masterTitle{
-    color: #6b0ab9;
-    font-family: nunito-sansB;
-    font-size: 25pt;
-    text-align: left;
-}
-#masterData{
-    color:#6b0ab9;
-    background: #6b0ab9;
-    height: 170px;
-    padding-left: 40px;
-    padding-right: 30px;
-    padding-top: 5px;
-    font-size: 10.5pt;
-}
+
+
+
 #masterData div{
     color: #6b0ab9;
 }
@@ -132,17 +99,7 @@
     padding-top: 33px;
     padding-bottom: 33px;
 }
-#masterInsBtn button{
-    background: #2dfffe;
-    color: #6b0ab9;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 80px;
-    padding-right: 80px;
-    border-radius: 30px;
-}
+
 /* The Magic Float Center Code */
 .float_center {
     float: right;
@@ -169,28 +126,7 @@
   .talleresItem{
       color: black;
   }
-  .talleresItemTitle{
-      color: #f9c333;
-      background: #6b0ab9;
-      padding-left: 30px;
-      padding-right: 30px;
-      padding-top: 5px;
-      padding-bottom: 5px;
-      text-align: center;
-      font-family: nunito-sansB;
-      font-size: 10pt;
-  }
-  .talleresItemContent{
-      background: #2dfffe;
-      padding-left: 30px;
-      padding-right: 30px;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      text-align: center;
-      font-size: 65pt;
-      font-family: nunito-sansB;
-      color: #6b0ab9;
-  }
+  
 
 .col-half-offset{
     margin-left:3.226666669%
@@ -370,12 +306,7 @@
 .footerLocation td{
     padding-right: 35px;
 }
-.footLogos td img{
-    width: 90%;
-    padding-top: 5px;
-    padding-right: 50px;
-    
-}
+
 #imgLocation{
     padding-top: 30px;
 }
@@ -434,6 +365,110 @@
         margin: 0 auto;
         /*background:#fff5ff;*/
     }
+    .navMob{
+        display: none;
+    }
+
+    .masterTable{
+        width: 40%;
+        float:left;
+        margin-left: 7%;
+    }
+
+    #masterInsBtn button{
+        background: #2dfffe;
+        color: #6b0ab9;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-left: 80px;
+        padding-right: 80px;
+        border-radius: 30px;
+    }
+    #masterData{
+        color:#6b0ab9;
+        background: #6b0ab9;
+        height: 170px;
+        padding-left: 40px;
+        padding-right: 30px;
+        padding-top: 5px;
+        font-size: 10.5pt;
+    }
+    .masterFTitle{
+        color: #6b0ab9;
+        font-size: 17pt;
+        padding-left: 35px;
+    }
+    .masterSTitle{
+        color: #6b0ab9;
+        font-size: 13pt;
+        padding-left: 35px;
+        font-family: nunito-sansSBI;
+    }
+    .masterTable .midTable{
+        width: 64.5%;
+        height: 227px;
+    }
+    .masterTable .midTablePh{
+        width:35.4%;
+        height: 227px;
+    }
+    .masterTitle{
+        color: #6b0ab9;
+        font-family: nunito-sansB;
+        font-size: 25pt;
+        text-align: left;
+    }
+    .talleresDays{
+        display: inline;
+    }
+    .talleresMov{
+        display: none;
+    }
+    .talleresItemTitle{
+        color: #f9c333;
+        background: #6b0ab9;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-align: center;
+        font-family: nunito-sansB;
+        font-size: 10pt;
+    }
+    .talleresItemContent{
+        background: #2dfffe;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+        font-size: 65pt;
+        font-family: nunito-sansB;
+        color: #6b0ab9;
+    }
+    #masterTitleMovImg{
+        display: none;
+    }
+    #masterTitleDesImg{
+        display: true;
+    }
+    .plumasDiv{
+        display: true;
+    }
+    .plumasDivMov{
+        display: none;
+    }
+    .footLogos td img{
+        width: 90%;
+        padding-top: 5px;
+        padding-right: 50px;
+        
+    }
+    .footerMov{
+        display: none;
+    }
   }
   @media screen and (max-width: 600px) {
     .headDiv{
@@ -447,11 +482,11 @@
         height: 340px;
         position: relative;
     }
-    #lvVideoMob{
-        display: block;
+    #lvVideo{
+        height: 300px !important;
     }
     #sectionMasterClases{
-        margin-top: 140px;
+        margin-top: 120px;
         width: 100%;
     }
     #content{
@@ -459,4 +494,134 @@
         margin: 0 auto;
         /*background:#fff5ff;*/
     }
+    .navMob{
+        display: block;
+    }
+
+    .masterTable{
+        width: 80%;
+        margin: auto;
+    }
+    #masterInsBtn button{
+        background: #2dfffe;
+        color: #6b0ab9;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-left: 50px;
+        padding-right: 50px;
+        border-radius: 30px;
+    }
+    #masterData{
+        color:#6b0ab9;
+        background: #6b0ab9;
+        height: 1px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 7.5pt;
+    }
+    .masterFTitle{
+        color: #6b0ab9;
+        font-size: 10pt;
+        padding-left: 35px;
+    }
+    .masterSTitle{
+        color: #6b0ab9;
+        font-size: 11pt;
+        padding-left: 35px;
+        font-family: nunito-sansSBI;
+    }
+    .masterTable .midTable{
+        width: 60.5%;
+        height: 90px;
+    }
+    .masterTable .midTablePh{
+        width:35.4%;
+        height: 90px;
+    }
+    .midTablePh #imgMasterRight{
+        position: relative;
+        top: 4px;
+    }
+    .masterTitle{
+        color: #6b0ab9;
+        font-family: nunito-sansB;
+        font-size: 25pt;
+        text-align: left;
+        height: 7px;
+    }
+    .talleresDays{
+        display: none;
+    }
+    .talleresMov{
+        display: true;
+        width: 100%;
+    }
+    .talleresItemTitle{
+        color: #f9c333;
+        background: #6b0ab9;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-align: center;
+        font-family: nunito-sansB;
+        font-size: 10pt;
+    }
+    .talleresItemContent{
+        background: #2dfffe;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        text-align: center;
+        font-size: 40pt;
+        font-family: nunito-sansB;
+        color: #6b0ab9;
+    }
+    #masterTitleMovImg{
+        display: true;
+    }
+    #masterTitleDesImg{
+        display: none;
+    }
+    .plumasDiv{
+        display: none;
+    }
+    .plumasDivMov{
+        display: true;
+    }
+    .plumasMovText{
+        color: #6b0ab9 !important;
+    font-size: 10pt !important;
+    text-align: left !important;
+    padding-top: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+    }
+    .tallerStyle{
+        margin-left: 10px;
+    }
+    .footerDes{
+        display: none;
+    }
+    #footer{
+        height: 600px;
+    }
+    .styleFooterMov{
+        font-size: 13pt !important;
+    }
+    .footLogos td img{
+        width: 89%;
+        padding-top: 5px;
+        padding-right: 0px;
+        
+    }
+    .masterCircle{
+        top: 0px !important;
+        right: 0px !important;
+        width: 100% !important;
+    }
+    
   }

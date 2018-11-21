@@ -25,38 +25,31 @@
                 </button>
                 
                 <a style="padding-left:0px; color:#f9c333 !important;" class="navbar-brand" href="#">INGRESO LIBRE</a>
-                <a class="navbar-brand " href="#"><img style="width:80%;" src="images/lvLogo.png"></a>
+                <a class="navbar-brand " onclick="ChangeLV(1);" href="#"><img width="80px" src="images/lvLogo.png"></a>
                 
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">¿Qué es Lima Visual? <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" onclick="ChangeLV(2);" href="#">¿Qué es Lima Visual? <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Master Clases</a>
+                        <a class="nav-link" onclick="ChangeLV(3);" href="#">Master Clases</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Talleres</a>
+                        <a class="nav-link" onclick="ChangeLV(4);" href="#">Talleres</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Horarios de Buses</a>
+                        <a class="nav-link" onclick="ChangeLV(5);" href="#">Horarios de Buses</a>
                     </li>
                     </ul>
                     
                 </div>
 
                 
-                </nav>
-                <div id="lvVideoMob" style="height:100%; display: true; overflow: hidden;">
-                        <video width="800px" height="100%" controls autoplay>
-                        <source src="images/y2mate.com - paramore_hard_times_official_video_AEB6ibtdPZc_360p.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                        </video>
-                </div>
-                
+                </nav>                                             
                     
-                <div class="row headDiv">
-                        <div class="col-md-4" id="headerBanner">
+                <div class="row">
+                        <div class="col-md-4 d-none d-sm-block" id="headerBanner">
                                 <table class="botomTable">
                                     <tr>
                                         <td class="headerTitleText">
@@ -94,7 +87,7 @@
                             </div>
                         <div id="headerSpace" class="col-md-8">
                             
-                            <div id="lvVideo" style="height:100%; display: true;">
+                            <div id="lvVideo" style="height:100%; display: true; ">
                                     <video width="800px" height="100%" controls autoplay>
                                     <source src="images/y2mate.com - paramore_hard_times_official_video_AEB6ibtdPZc_360p.mp4" type="video/mp4">
                                     Your browser does not support the video tag.
@@ -114,13 +107,14 @@
 
             <section id="sectionMasterClases">
                 <div style="width:100%; text-align: center; margin-top: 10px; margin-bottom: 10px;">
-                        <img src="images/MasterTitle.png"/>
+                        <img id="masterTitleMovImg" width="80%" src="images/MasterTitle.png"/>
+                        <img id="masterTitleDesImg" src="images/MasterTitle.png"/>
                 </div>
                 <div class="subTitle">Conferencias con destacados ponentes internacionales y<br>
                 nacionales que compartiran sus experiencias<br>
             profesionales</div>
                 <div>
-                        <div class="masterTable">
+                        <div class="masterTable d-none d-sm-block">
                                 <table>
                                         <tr style="width:100%;">
                                             <td class="midTablePh">
@@ -190,15 +184,15 @@
                         <div class="masterTable">
                                 <table>
                                         <tr style="width:100%;">
-                                            <td class="midTablePh">
+                                            <td  class="midTablePh">
                                                 <!-- aqui va la foto -->
                                                 <img id="imgMasterRight" src="images/SandraFuentes.png">
-                                                <img class="circulo" style="width:10%; top: 1090px; right: 360px; z-index: -1;" src="images/Circulo-01.png">
+                                                <img class="circulo masterCircle" style="width:10%; top: 1090px; right: 360px; z-index: -1;" src="images/Circulo-01.png">
                                             </td>
                                             <td class="midTable">
                                                 <table class="dataTable">
                                                     <tr>
-                                                        <td id="masterTitleR" class="masterTitle">
+                                                        <td  id="masterTitleR" class="masterTitle">
                                                             <!-- titulo -->
                                                             <div id="masterTitleR1" class="masterFTitle">IDEAS QUE MARCAN</div>
                                                             <div id="masterTitleR2" class="masterSTitle">Sandra Fuentes</div>
@@ -262,8 +256,100 @@
                     donde los asistentes podrán ser parte de la realización<br>
                     de un proyecto.
                 </div>
+
+                <div class="row talleresMov" style="margin:auto; width:80%;">
+                    <div class="col-xs-4 ">
+                            <button onclick="ChangeDay(0);" class="talleresItem text-center">
+                                    <table>
+                                        <tr>
+                                            <td class="talleresItemTitle">
+                                                LUNES
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="talleresItemContent">
+                                                18
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </button>
+                    </div>
+                    <div class="col-xs-4 col-half-offset ">
+                            <button onclick="ChangeDay(1);" class="talleresItem  text-center">
+                                    <table>
+                                        <tr>
+                                            <td class="talleresItemTitle">
+                                                MARTES
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="talleresItemContent">
+                                                19
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </button>
+                    </div>
+                    <div class="col-xs-4 col-half-offset">
+                            <button onclick="ChangeDay(1);" class="talleresItem text-center">
+                                    <table>
+                                        <tr>
+                                            <td class="talleresItemTitle">
+                                                MIERCOLES
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="talleresItemContent">
+                                                20
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </button>
+                    </div>
+                </div>
+
+                <div class="row talleresMov" style="margin:auto; width:80%;">
+                        <div class="col-xs-4 ">
+                                <button onclick="ChangeDay(0);" class="talleresItem text-center">
+                                        <table>
+                                            <tr>
+                                                <td class="talleresItemTitle">
+                                                    JUEVES
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="talleresItemContent">
+                                                    21
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </button>
+                        </div>
+                        
+                        <div class="col-xs-4 col-half-offset">
+                                <button onclick="ChangeDay(1);" class="talleresItem text-center">
+                                        <table>
+                                            <tr>
+                                                <td class="talleresItemTitle">
+                                                    VIERNES
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="talleresItemContent">
+                                                    22
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </button>
+                        </div>
+                        <div class="col-xs-4 col-half-offset ">
+                                
+                                        <img width="90px;" style="margin-top:40px;" src="images/lvLogo.png">
+                                
+                        </div>
+                    </div>
                 
-                <div class="row" style="margin:auto; width:88%;">
+                <div class="row talleresDays" style="margin:auto; width:88%;">
  
                     <button onclick="ChangeDay(0);" class="col-xs-2 talleresItem text-center">
                         <table>
@@ -293,7 +379,7 @@
                             </tr>
                         </table>
                     </button>
-                    <button onclick="ChangeDay(2);" class="col-xs-2 col-half-offset talleresItem text-center">
+                    <button onclick="ChangeDay(2);" class="col-xs-2  col-half-offset talleresItem text-center">
                         <table>
                             <tr>
                                 <td class="talleresItemTitle">
@@ -338,9 +424,38 @@
 
                 </div>
 
-              
+                <div class="plumasDivMov">
+                        <img id="imgTaller" style="width:93%; position: relative; top: 60px;" src="images/talleres/ameliaRuiz.png">
+                        <div style="background:#2dfffe; height:350px; margin-left:15px; margin-right:15px;">
+                                <p id="textTaller" class="plumasMovText">Workshop de caligrafia Graffiti, donde aprendemos a descodificar y Abstraer la estructuras de las letras coló la cultura del graffiti lo ha hecho al rededor del mundo, de donde nació este estilo caligráfico y review del caso barraLima. 
+                                    </p>
+                                    <div id="tallerDay" class="tallerStyle">&#9658; <span style="color:#f9c333 !important;">Día</span> Lunes 21 de Julio</div>
+                                    <div id="tallerHour" class="tallerStyle">&#9658; <span style="color:#f9c333 !important;">Hora:</span> 08:30 am - 5:00 pm</div>
+                                    <div id="tallerCampus" class="tallerStyle">&#9658; <span style="color:#f9c333 !important;">Campus:</span> La Molina</div>
+                                    <button style="margin-top:20px;" class="plumasBtn"type="button">INSCRIBIRSE</button>
+                        </div>
 
-                <div style="margin-left: 0px; margin-right: 0px; margin-top: 130px;" class="row">
+                        <div style=" position: relative; right: 0px;" class="col-md-6">
+
+                                <table style="width: 100%;">
+                                        <tr>
+                                            <td style="width:80%;">
+    
+                                            </td>
+                                            <td style="background:#6b0ab9; ">
+                                                    
+                                                    <button id="btnTallerLeft" onclick="ChangeTallerInfoLeft();" style="background:#6b0ab9; border:0px;" type="button"><img style="width:70%;" src="images/btnLeft.png"></button>
+                                            </td>
+                                            <td style="background:#6b0ab9; ">
+                                                    <button id="btnTallerRight" onclick="ChangeTallerInfoRight();" style="background:#6b0ab9; border:0px;" type="button"><img style="width:70%" src="images/btnRight.png"></button>
+                                            </td>
+                                            
+                                        </tr>
+                                </table>
+                        </div>
+                </div>
+
+                <div style="margin-left: 0px; margin-right: 0px; margin-top: 130px;" class="row plumasDiv">
 
                     <div class="col-md-6">
                             <div style="position:absolute; width:100%; top: 0px; right: -45px;">
@@ -401,7 +516,59 @@
             </section>
 
             <footer id="footer">
-                    <div style="padding-bottom:30px;" class="container row">
+
+                <div style="width:100%;" class="footerMov">
+
+                    <div class="row" style="padding-top:20px;">
+                        <div class="col-xs-6" style="margin-left:40px;">
+                                <img src="images/lvLogoWhite.png">
+                        </div>
+                        <div class="col-xs-6" style="margin-left:20px; line-height: 8px; margin-top: 20px; ">
+                                <p style="color: #f9c333 !important;">Lima Visual</p>
+                                <p style="color: #f9c333 !important;">Master Clases</p>
+                                <p style="color: #f9c333 !important;">Talleres</p>
+                        </div>
+                    </div>
+
+                    <div style="width:100%;">
+                            <img width="100%" id="imgLocation" src="images/isilMolina.png">
+                    </div>
+                                    
+                    <div class="row">
+                        <table style="margin:auto;">
+                            <tr>
+                                <td style="padding-left:30px; padding-right:30px; color:#f9c333;">
+                                        <a onclick="ChangeLocation(2)" style="text-decoration:none; color: #f9c333;" href="#">Miraflores</a>
+                                </td>
+                                <td style="padding-left:30px; padding-right:30px; color:#f9c333;">
+                                        <a onclick="ChangeLocation(3)" style="text-decoration:none; color: #f9c333;" href="#">La Molina</a>
+                                    </td>
+                                    <td style="padding-left:30px; padding-right:30px; color:#f9c333;">
+                                            <a onclick="ChangeLocation(1)" style="text-decoration:none; color: #f9c333;" href="#">San Isidro</a>
+                                        </td>
+                            </tr>
+                        </table>
+                      
+                    </div>
+                    <div>
+                        <table style="margin:auto; margin-top: 20px; margin-bottom: 20px;">
+                            <tr>
+                                    <td style="padding-left:10px; padding-right:10px;">
+                                            <img src="images/facebookBtn.png">
+                                        </td>
+                                        <td style="padding-left:10px; padding-right:10px;">
+                                            <img src="images/instagramBtn.png">
+                                        </td>
+                                        <td style="padding-left:10px; padding-right:10px;">
+                                            <img src="images/twitterBtn.png">
+                                        </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+
+                    <div style="padding-bottom:30px;" class="container row footerDes">
                         <div class="col-md-1">
                             
                         </div>
@@ -493,7 +660,7 @@
                             </tr>
                         </table>
                     </div>
-                    <div style="text-align:center; font-size: 15pt; color: #2dfffe;">
+                    <div style="text-align:center; font-size: 15pt; color: #2dfffe;" class="styleFooterMov">
                         <p style="color:#2dfffe;">Copyrigth 2018 . Lima Visual</p>
                     </div>
                 </footer>
