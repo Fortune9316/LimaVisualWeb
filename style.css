@@ -99,6 +99,9 @@
     padding-top: 33px;
     padding-bottom: 33px;
 }
+#masterInsBtn button{
+    background: #2dfffe !important;
+}
 
 /* The Magic Float Center Code */
 .float_center {

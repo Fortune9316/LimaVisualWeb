@@ -65,10 +65,13 @@ function ChangeTallerInfoRight()
 function ChangeTallerInfo()
 {
     var imgTaller = document.getElementById("imgTaller");
+    var imgTaller2 = document.getElementById("imgTaller2");
     imgTaller.src = "images/talleres/" + imgTalleres[dias[indexDay][indexTaller]] + ".png";
+    imgTaller2.src = "images/talleres/" + imgTalleres[dias[indexDay][indexTaller]] + ".png";
     document.getElementById("titleTaller").innerHTML = titleTalleres[dias[indexDay][indexTaller]];
     document.getElementById("subTitleTaller").innerHTML = subTitleTalleres[dias[indexDay][indexTaller]];
     document.getElementById("textTaller").innerHTML = textTalleres[dias[indexDay][indexTaller]];
+    document.getElementById("textTaller2").innerHTML = textTalleres[dias[indexDay][indexTaller]];
     return false;
 }
 function ChangeDay(x){
