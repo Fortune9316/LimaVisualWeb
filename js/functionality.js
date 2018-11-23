@@ -13,17 +13,24 @@ var textTalleres = ["Workshop de caligrafia Graffiti, donde aprendemos a descodi
 
 var imgMasterL = ["FranciscoRuiz.png","AlejandroCespedes.png"];
 var imgMasterR = ["SandraFuentes.png","SusanaCastillo.png"];
+var imgMovMasterR = ["FranciscoRuiz.png","AlejandroCespedes.png","SandraFuentes.png","SusanaCastillo.png"];
 
 var titleMasterL1 = ["INTELIGENCIA AIII","SOCIAL MEDIA"]
 var titleMasterL2 = ["Francisco Ruiz", "Alejandro C."];
 var titleMasterR1 = ["IDEAS QUE MARCAN","EN LA RADIO"];
 var titleMasterR2 = ["Sandra Fuentes","Susana Castillo"];
+var titleMovMasterR1 = ["INTELIGENCIA AIII","SOCIAL MEDIA","IDEAS QUE MARCAN","EN LA RADIO"];
+var titleMovMasterR2 = ["Francisco Ruiz", "Alejandro C.","Sandra Fuentes","Susana Castillo"];
 var contentMasterText = ["No es lo mismo trabajar en la industria de la publicidad que en la industria de la creatividad que mejoran la vida del usuario",
 "Esta charla es acerca de como Instagram, con un billón de usuarios activos diarios,y que pronto se convertirá en la red social más importante"];
 var contentMasterText2 = ["Una marca es tan buena como la idea que representa, y ésta debe sorprender, intrigar y explicar con un lenguaje simple",
 "Cada Mundial de Fútbol es una nueva ventana para encontrarnos con los avances tecnológicos que aportan en cada cobertura periodística"];
+var contentMovMasterText2 = ["No es lo mismo trabajar en la industria de la publicidad que en la industria de la creatividad que mejoran la vida del usuario",
+"Esta charla es acerca de como Instagram, con un billón de usuarios activos diarios,y que pronto se convertirá en la red social más importante","Una marca es tan buena como la idea que representa, y ésta debe sorprender, intrigar y explicar con un lenguaje simple",
+"Cada Mundial de Fútbol es una nueva ventana para encontrarnos con los avances tecnológicos que aportan en cada cobertura periodística"];
 var contentMasterDay = ["&#9658;<span style=\"color:#f9c333 !important;\">Día</span> 18/08</div>","&#9658;<span style=\"color:#f9c333 !important;\">Día</span> 19/08"];
 var contentMasterDay2= ["&#9658;<span style=\"color:#f9c333 !important;\">Día</span> 18/08</div>","&#9658;<span style=\"color:#f9c333 !important;\">Día</span> 19/08"];
+var contentMovMasterDay2 = ["&#9658;<span style=\"color:#f9c333 !important;\">Día</span> 18/08</div>","&#9658;<span style=\"color:#f9c333 !important;\">Día</span> 19/08","&#9658;<span style=\"color:#f9c333 !important;\">Día</span> 18/08</div>","&#9658;<span style=\"color:#f9c333 !important;\">Día</span> 19/08"];
 var contentMasterHour = ["&#9658; <span style=\"color:#f9c333 !important;\">Hora:</span> 07:00 pm","&#9658; <span style=\"color:#f9c333 !important;\">Hora:</span> 07:00 pm"];
 var titleMasterR = ["Sandra Fuentes","Susana Castillo"];
 var ordenLunes = [0,1,2,3,4,5,6,7];
@@ -39,6 +46,7 @@ var indexDay = 0; //0 lunes 1 martes 2 miercoles 3 jueves 4 viernes
 
 var indexMasterL = 0;
 var indexMasterR = 0;
+var indexMovMasterR = 0;
 window.onload = function () {ChangeLV(1); $('#insConfirmText').css('display','none');}
 function ChangeTallerInfoLeft()
 {
@@ -113,6 +121,30 @@ function BtnRightMasterL()
 
     ChangeMasterImg();
 }
+
+function BtnMovMasterR()
+{
+    if(indexMovMasterR<imgMovMasterR.length -1)
+    {
+        indexMovMasterR ++;
+    }else{
+        indexMovMasterR = 0;
+    }
+
+    ChangeMovMasterImg();
+}
+function BtnMovMasterL()
+{
+    if(indexMovMasterR>0)
+    {
+        indexMovMasterR --;
+    }else{
+        indexMovMasterR = imgMovMasterR.length - 1;
+    }
+
+    ChangeMovMasterImg();
+}
+
 function BtnRightMasterR()
 {
     if(indexMasterR>0)
@@ -123,6 +155,17 @@ function BtnRightMasterR()
     }
 
     ChangeMasterImg();
+}
+
+function ChangeMovMasterImg()
+{
+    var imgeMasterR = document.getElementById("imgMasterMov");
+    imgeMasterR.src = "images/" + imgMovMasterR[indexMovMasterR];
+    document.getElementById("masterMovTitleR1").innerHTML = titleMovMasterR1[indexMovMasterR];
+    document.getElementById("masterMovTitleR2").innerHTML = titleMovMasterR2[indexMovMasterR];
+
+    document.getElementById("masterMovText2").innerHTML = contentMovMasterText2[indexMovMasterR];
+    document.getElementById("masterMovDay2").innerHTML = contentMovMasterDay2[indexMovMasterR];
 }
 
 function ChangeMasterImg()

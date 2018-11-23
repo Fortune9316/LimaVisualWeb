@@ -14,30 +14,60 @@
 <body>
     <div id="content">
 
-        <header id="headerT">
+            <header id="headerT">
 
-            <div class="row">
-                <div class="col-md-3 logo">
-                    <img src="images/lvLogo.png">
+                    <nav style="background:#6b0ab9 !important; width: 100% !important;" class="navbar navbar-expand-lg navbar-dark bg-light headDivMov">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            
+                            <a style="padding-left:0px; color:#f9c333 !important;" class="navbar-brand" href="#">INGRESO LIBRE</a>
+                            <a class="navbar-brand " onclick="ChangeLV(1);" href="#"><img width="80px" src="images/lvLogo.png"></a>
+                            
+                            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                <li class="nav-item active">
+                                    <a class="nav-link" onclick="ChangeLV(2);" href="#">¿Qué es Lima Visual? <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" onclick="ChangeLV(3);" href="#">Master Clases</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" onclick="ChangeLV(4);" href="#">Talleres</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" onclick="ChangeLV(5);" href="#">Horarios de Buses</a>
+                                </li>
+                                </ul>
+                                
+                            </div>
+            
+                            
+                            </nav>    
+    
+                <div class="row d-none d-sm-block">
+                    <div class="col-md-3 logo">
+                        <img src="images/lvLogo.png">
+                    </div>
+                    <div class="col-md-9">
+                        <table>
+                                <ul class="nav justify-content-end">
+                                        <li class="nav-item">
+                                          <a class="nav-link active" href="#">INICIO</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link" href="#">TALLERES</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link" href="#">MASTER CLASES</a>
+                                        </li>
+                                      </ul>
+                        </table>
+                    </div>
                 </div>
-                <div class="col-md-9">
-                    <table>
-                            <ul class="nav justify-content-end">
-                                    <li class="nav-item">
-                                      <a class="nav-link active" href="#">INICIO</a>
-                                    </li>
-                                    <li class="nav-item">
-                                      <a class="nav-link" href="#">TALLERES</a>
-                                    </li>
-                                    <li class="nav-item">
-                                      <a class="nav-link" href="#">MASTER CLASES</a>
-                                    </li>
-                                  </ul>
-                    </table>
-                </div>
-            </div>
-
-        </header>
+    
+            </header>
+    
 
 
 
@@ -47,25 +77,25 @@
 
             </div>
 
-            <div class="col-md-3" >
+            <div class="col-xs-12 col-md-3 THeaderMov" >
                 <img class="circulo" style="width:60%; top: -40px; left: -70px; z-index: -1;" src="images/Circulo-01.png">
-            <img style="width:100%;" src="images/sandraTaller.png">
+            <img class="TImage" style="width:60%;" src="images/sandraTaller.png">
             <p class="picName">Amelia Ruiz</p>
-            <div style="line-height:0.5; margin-bottom: 50px;">
+            <div class="infoMov" style="line-height:0.5; margin-bottom: 50px;">
                 <p class="textInfo">&#9658; <span class="yellow">Día:</span> Viernes 25 de Julio</p>
                 <p class="textInfo">&#9658; <span class="yellow">Hora:</span> 6:30 pm - 8:00 pm</p>
                 <p class="textInfo">&#9658; <span class="yellow">Campus:</span> Miraflores</p>
             </div>
             
-            <button style="background:url('images/btnInscribirse.png') no-repeat; height: 58px;" onclick="Inscribirse();" class="btnInsc" type="button">   </button>
+            <button class="d-none d-sm-block" style="background:url('images/btnInscribirse.png') no-repeat; width: 400px; height: 58px; border: 0;" onclick="Inscribirse();" class="btnInsc" type="button">   </button>
         </div>
             
-            <div class="col-md-2">
+            <div class="col-md-2 d-none d-sm-block">
 
             </div>
-            <div class="col-md-5">
+            <div class="col-xs-12 col-md-5 contentPlumasMov">
                 
-                <table>
+                <table class="formMov">
                         <tr>
                                 <td class="talleresTitle">
                                     IDEAS QUE MARCAN
@@ -152,9 +182,9 @@
                                     <tr class="formStyle">
                                         <td>
                                                 <select>
-                                                        <option value="volvo">Alumno</option>
-                                                        <option value="saab">Egresado</option>
-                                                        <option value="mercedes">General</option>
+                                                        <option value="volvo">Alumnos</option>
+                                                        <option value="saab">Egresados</option>
+                                                        <option value="mercedes">Público en general</option>
                                                 </select>
                                         </td>
                                         
@@ -166,15 +196,65 @@
                 </table>
             </div>
             
-            <div class="col-md-1">
-
-            </div>
+            <div id="btnInsTaller" class="col-xs-12 col-md-1">
+                    <button id="btnInsTaller" class="d-block d-sm-none" style="background:url('images/btnInscribirse.png') no-repeat; width:400px; height: 58px; border:0; margin-top:30px; margin-left: 40px;" onclick="Inscribirse();" class="btnInsc" type="button">   </button>
+                </div>
 
         </div>
 
 
         <footer id="footer">
-            <div style="padding-bottom:30px;" class="container row">
+                <div style="width:100%;" class="footerMov">
+
+                        <div class="row" style="padding-top:20px;">
+                            <div class="col-xs-6" style="margin-left:40px;">
+                                    <img src="images/lvLogoWhite.png">
+                            </div>
+                            <div class="col-xs-6" style="margin-left:20px; line-height: 8px; margin-top: 20px; ">
+                                    <p style="color: #f9c333 !important;">Lima Visual</p>
+                                    <p style="color: #f9c333 !important;">Master Clases</p>
+                                    <p style="color: #f9c333 !important;">Talleres</p>
+                            </div>
+                        </div>
+    
+                        <div style="width:100%;">
+                                <img width="100%" id="imgLocation" src="images/isilMolina.png">
+                        </div>
+                                        
+                        <div class="row">
+                            <table style="margin:auto;">
+                                <tr>
+                                    <td style="padding-left:30px; padding-right:30px; color:#f9c333;">
+                                            <button style="background:#6b0ab9; color: #f9c333; border:0;" onclick="ChangeLocation(2)">Miraflores</button>
+                                    </td>
+                                    <td style="padding-left:30px; padding-right:30px; color:#f9c333;">
+                                            <button style="background:#6b0ab9; color: #f9c333; border:0;" onclick="ChangeLocation(3)">Miraflores</button>
+                                        </td>
+                                        <td style="padding-left:30px; padding-right:30px; color:#f9c333;">
+                                                <button style="background:#6b0ab9; color: #f9c333; border:0;" onclick="ChangeLocation(1)">Miraflores</button>
+                                            </td>
+                                </tr>
+                            </table>
+                          
+                        </div>
+                        <div>
+                            <table style="margin:auto; margin-top: 20px; margin-bottom: 20px;">
+                                <tr>
+                                        <td style="padding-left:10px; padding-right:10px;">
+                                                <img src="images/facebookBtn.png">
+                                            </td>
+                                            <td style="padding-left:10px; padding-right:10px;">
+                                                <img src="images/instagramBtn.png">
+                                            </td>
+                                            <td style="padding-left:10px; padding-right:10px;">
+                                                <img src="images/twitterBtn.png">
+                                            </td>
+                                </tr>
+                            </table>
+                        </div>
+    
+                    </div>
+            <div style="padding-bottom:30px;" class="container row footerDes">
                 <div class="col-md-1">
                     
                 </div>
