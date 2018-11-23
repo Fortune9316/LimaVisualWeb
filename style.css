@@ -9,7 +9,7 @@
 @font-face{ font-family: nunito-sansSBI; src: url('fonts/NunitoSans-LightItalic.ttf');}
 @font-face{ font-family: nunito-sansBa; src: url('fonts/NunitoSans-Black.ttf');}
 @font-face{font-family: nunito-sansB; src: url('fonts/NunitoSans-Bold.ttf');}
-
+@font-face{font-family: nunito-sansEB; src: url('fonts/NunitoSans-ExtraBold.ttf');}
 
 #background{
     background: #fff5ff;
@@ -194,6 +194,7 @@
 #headerT{
     background: #6b0ab9;
     padding-bottom: 10px;
+    width: 100%;
 }
 .logo img{
     margin-left: 20px;
@@ -285,21 +286,8 @@
 .formStyle td h6{
     color: #6b0ab9;
 }
-.formStyle td input{
-    width: 500px;
-    height: 30px;
-    color: black;
-    background: #02dffe;
-    border: 0;
-}
-.formStyle td select{
-    width: 500px;
-    height: 30px;
-    color: black;
-    background: #02dffe;
-    border: 0;
-    border-radius: 0;
-}
+
+
 .yellow{
     color: #f9c333;
 }
@@ -354,6 +342,45 @@
     border-color: rgb(255,102,203);
   } 
 
+  .imgTaller{
+      position: relative;
+  }
+  .imgTallerText{
+      position: absolute;
+      color: #f9c333;
+      bottom: 0;
+      margin-left: 20px;
+      font-family: nunito-sansB;
+  }
+
+  .imgTaller img{
+      width: 100%;
+      vertical-align: top;
+  }
+  .imgTaller:after{
+    content:'\A';
+    position:absolute;
+    width:100%; height:100%;
+    top:0; left:0;
+    background:rgba(0,0,0,0.6);
+    opacity:1;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+  }
+  .imgTaller:hover:after{
+      opacity: 0;
+  }
+
+  #creativeDiv:hover #txtCreative{
+      display:none;
+  }
+
+  #ideasDiv:hover #txtIdeas{
+      display: none;
+  }
+  #comicDiv:hover #txtComic{
+      display: none;
+  }
   @media screen and (min-width: 601px){
     .headDivMov{
         display: none;
@@ -475,6 +502,22 @@
     .footerMov{
         display: none;
     }
+    .formStyle td input{
+        width: 500px;
+        height: 30px;
+        color: black;
+        background: #02dffe;
+        border: 0;
+    }
+    .formStyle td select{
+        width: 500px;
+        height: 30px;
+        color: black;
+        background: #02dffe;
+        border: 0;
+        border-radius: 0;
+    }
+
   }
   @media screen and (max-width: 600px) {
     .headDiv{
@@ -629,5 +672,41 @@
         right: 0px !important;
         width: 100% !important;
     }
-    
+    .THeaderMov{
+        text-align: center;
+    }
+    .infoMov{
+        margin-top: 30px;
+        text-align: left;
+        margin-left: 27%;
+    }
+    .formMov{
+        width: 100%;
+    }
+    .formStyle td input{
+        width: 330px;
+        height: 30px;
+        color: black;
+        background: #02dffe;
+        border: 0;
+    }
+    .formStyle td select{
+        width: 330px;
+        height: 30px;
+        color: black;
+        background: #02dffe;
+        border: 0;
+        border-radius: 0;
+    }
+    .txtTitleMov{
+        font-size: 20pt;
+    }
+    .contentPlumasMov{
+        margin-left: 5%;
+    }
+    .divsMov{
+        margin-bottom: 30px;
+        margin-left: 10px;
+        margin-right: 30px;
+    }
   }

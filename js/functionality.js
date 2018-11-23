@@ -196,6 +196,9 @@ function Inscribirse()
     $('#fieldMAil').css('display','none');
     $('#fieldTP').css('display','none');
     $('#insConfirmText').show();
+    $('#btnInsTaller').css('display','none');
+    $('#recomendadosMov').show();
+    $('#recomendaosTitleMov').show();
 }
 
 
