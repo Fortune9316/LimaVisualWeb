@@ -313,6 +313,9 @@
 #imgLocation{
     padding-top: 30px;
 }
+#imgLocation2{
+    padding-top: 30px;
+}
 #masterText{
     color: #f9c333 !important;
 }
@@ -321,7 +324,7 @@
 }
 .plumasBackground{
     background: #2dfffe;
-    height: 250px;
+    height: 240px;
     position: relative;
     z-index: -2;
 }

@@ -161,7 +161,9 @@ function ChangeLocation(x)
     }
 
     var img = document.getElementById("imgLocation");
+    var img2 = document.getElementById("imgLocation2");
     img.src = link;
+    img2.src = link;
 }
 function ChangeLV(x){
     $('#lvVideo').css('display','none');

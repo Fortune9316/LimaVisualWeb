@@ -167,10 +167,10 @@
                                                 <tr >
                                                     <td style="width:80%;">
                                                     </td>
-                                                    <td style="background:#2dfffe; width:20%; padding-left: 20px; padding-top: 5px; padding-bottom: 5px;">
+                                                    <td style="background:#2dfffe; width:6%; padding-left: 20px; padding-top: 5px; padding-bottom: 5px;">
                                                             <button onclick="BtnLeftMasterL();" style="background:#2dfffe; border:0px;" type="button"><img style="width:10px;" src="images/btnLeftPur.png"></button>
                                                     </td>
-                                                    <td style="background:#2dfffe; width:20%; text-align: right; padding-right: 20px; padding-top: 5px; padding-bottom: 5px;">
+                                                    <td style="background:#2dfffe; width:6%; text-align: right; padding-right: 20px; padding-top: 5px; padding-bottom: 5px;">
                                                             <button onclick="BtnLeftMasterR();" style="background:#2dfffe; border:0px;" type="button"><img style="width:10px;" src="images/btnRightPur.png"></button>
                                                     </td>
                                                 </tr>
@@ -182,7 +182,7 @@
 
                         <!--  -->
 
-                        <div class="masterTable">
+                        <div class="masterTable" style="position:relative;">
                                 <table>
                                         <tr style="width:100%;">
                                             <td  class="midTablePh">
@@ -229,25 +229,18 @@
                                                     <tr >
                                                         <td style="width:80%;">
                                                         </td>
-                                                        <td style="background:#2dfffe; width:20%; padding-left: 20px; padding-top: 5px; padding-bottom: 5px;">
+                                                        <td style="background:#2dfffe; width:6%; padding-left: 20px; padding-top: 5px; padding-bottom: 5px;">
                                                                 <button onclick="BtnRightMasterL();" style="background:#2dfffe; border:0px;" type="button"><img style="width:10px;" src="images/btnLeftPur.png"></button>
                                                         </td>
-                                                        <td style="background:#2dfffe; width:20%; text-align: right; padding-right: 20px; padding-top: 5px; padding-bottom: 5px;">
+                                                        <td style="background:#2dfffe; width:6%; text-align: right; padding-right: 20px; padding-top: 5px; padding-bottom: 5px;">
                                                                 <button onclick="BtnRightMasterR();" style="background:#2dfffe; border:0px;" type="button"><img style="width:10px;" src="images/btnRightPur.png"></button>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="width:80%;">
-
-                                                        </td>
-                                                        <td>
-                                                            <img class="circulo masterCircle" style="width:10%; top:132%; right:1%; z-index: -1;" src="images/Circulo-01.png">
                                                         </td>
                                                     </tr>
                                                 </table>
                                             </tr>
                                         
                                     </table>
+                                    <img class="circulo masterCircle" style="width:25%; bottom:-17%; right:-12%; z-index: -1;" src="images/Circulo-01.png">
                         </div>   
                 </div>
                                   
@@ -464,11 +457,11 @@
                         </div>
                 </div>
 
-                <div style="margin-left: 0px; margin-right: 0px; margin-top: 130px;" class="row plumasDiv">
-
+                <div style="margin-left: 90px; margin-right: 90px; margin-top: 130px; position:relative;" class="row plumasDiv">
+                    <img class="circulo" style="width:15%; top: -25%; left: 2.5%; z-index: -1;" src="images/Circulo-01.png">
                     <div class="col-md-6">
                             <div style="position:absolute; width:100%; top: 0px; right: -45px;">
-                                <img class="circulo" style="width:30%; bottom: 140px; left: 4px; z-index: -1;" src="images/Circulo-01.png">
+                                
                                 <img id="imgTaller2" style="width:70%;" src="images/talleres/ameliaRuiz.png">
                             </div>
                     </div>
@@ -509,10 +502,10 @@
                                         <td style="width:80%;">
 
                                         </td>
-                                        <td style="background:#6b0ab9; width:10%; padding-left: 20px; padding-right: 20px; padding-top: 5px; padding-bottom: 5px;">
+                                        <td style="background:#6b0ab9; width:8%; padding-left: 20px; padding-right: 20px; padding-top: 5px; padding-bottom: 5px;">
                                                 <button id="btnTallerLeft" onclick="ChangeTallerInfoLeft();" style="background:#6b0ab9; border:0px;" type="button"><img style="width:100%;" src="images/btnLeft.png"></button>
                                         </td>
-                                        <td style="background:#6b0ab9; width:10%; text-align: right; padding-left: 20px; padding-right: 20px; padding-top: 5px; padding-bottom: 5px;">
+                                        <td style="background:#6b0ab9; width:8%; text-align: right; padding-left: 20px; padding-right: 20px; padding-top: 5px; padding-bottom: 5px;">
                                                 <button id="btnTallerRight" onclick="ChangeTallerInfoRight();" style="background:#6b0ab9; border:0px;" type="button"><img style="width:100%" src="images/btnRight.png"></button>
                                         </td>
                                         
@@ -547,13 +540,13 @@
                         <table style="margin:auto;">
                             <tr>
                                 <td style="padding-left:30px; padding-right:30px; color:#f9c333;">
-                                        <a onclick="ChangeLocation(2)" style="text-decoration:none; color: #f9c333;" href="#">Miraflores</a>
+                                        <button style="background:#6b0ab9; color: #f9c333; border:0;" onclick="ChangeLocation(2)">Miraflores</button>
                                 </td>
                                 <td style="padding-left:30px; padding-right:30px; color:#f9c333;">
-                                        <a onclick="ChangeLocation(3)" style="text-decoration:none; color: #f9c333;" href="#">La Molina</a>
+                                        <button style="background:#6b0ab9; color: #f9c333; border:0;" onclick="ChangeLocation(3)">Miraflores</button>
                                     </td>
                                     <td style="padding-left:30px; padding-right:30px; color:#f9c333;">
-                                            <a onclick="ChangeLocation(1)" style="text-decoration:none; color: #f9c333;" href="#">San Isidro</a>
+                                            <button style="background:#6b0ab9; color: #f9c333; border:0;" onclick="ChangeLocation(1)">Miraflores</button>
                                         </td>
                             </tr>
                         </table>
@@ -585,20 +578,20 @@
         
                             <table>
                                 <tr >
-                                    <td>
+                                    <td >
                                         <img style="padding-bottom:50px; padding-top:50px;" src="images/lvLogoWhite.png" />
                                     </td>
                                 </tr>
                                 <tr>
                                     <table>
                                         <tr>
-                                            <td>
+                                            <td style="padding-left:5px; padding-right:5px;">
                                                 <img src="images/facebookBtn.png">
                                             </td>
-                                            <td>
+                                            <td style="padding-left:5px; padding-right:5px;">
                                                 <img src="images/instagramBtn.png">
                                             </td>
-                                            <td>
+                                            <td style="padding-left:5px; padding-right:5px;">
                                                 <img src="images/twitterBtn.png">
                                             </td>
                                         </tr>
@@ -616,25 +609,26 @@
                         <div class="col-md-2">
         
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4" style="padding-left:40%;">
                             <table>
                                 <tr>
                                     <td>
-                                        <img id="imgLocation" src="images/isilMolina.png">
+                                        <img id="imgLocation2" src="images/isilMolina.png">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
                                             <table style="width:100%; text-align:center;">
                                                 <tr class="footerLocation">
-                                                        <td >
-                                                                <a onclick="ChangeLocation(2)" style="text-decoration:none; color: #f9c333;" href="#">Miraflores</a>
+                                                            <td >
+                                                                
+                                                                <button style="background:#6b0ab9; color: #f9c333; border:0;" onclick="ChangeLocation(2)">Miraflores</button>
                                                             </td>
                                                             <td>
-                                                                <a onclick="ChangeLocation(3)" style="text-decoration:none; color: #f9c333;" href="#">La Molina</a>
+                                                                <button style="background:#6b0ab9; color: #f9c333; border:0;" onclick="ChangeLocation(3)">La Molina</button>
                                                             </td>
                                                             <td>
-                                                                <a onclick="ChangeLocation(1)" style="text-decoration:none; color: #f9c333;" href="#">San Isidro</a>
+                                                                <button style="background:#6b0ab9; color: #f9c333; border:0;" onclick="ChangeLocation(1)">San Isidro</button>
                                                             </td>
                                                 </tr>
         
@@ -643,7 +637,7 @@
                                 </tr>
                             </table>
                         </div>
-                        <div class="col-md-1">
+                        <div class="col-md-1" >
         
                         </div>
                         
