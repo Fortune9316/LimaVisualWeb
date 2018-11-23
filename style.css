@@ -36,7 +36,7 @@
     font-size: 19pt;
 }
 .botomTable td{
-    padding-left: 40px;
+    padding-left: 20%;
 }
 .headerTitleText{
     font-family: nunito-sansBI;
@@ -364,7 +364,7 @@
         display: none;
     }
     #content{
-        width: 1100px;
+        width: 100%;
         margin: 0 auto;
         /*background:#fff5ff;*/
     }
