@@ -22,18 +22,20 @@
                             </button>
                             
                             <a style="padding-left:0px; color:#f9c333 !important;" class="navbar-brand" href="#">INGRESO LIBRE</a>
-                            <a class="navbar-brand " onclick="ChangeLV(1);" href="#"><img width="80px" src="images/lvLogo.png"></a>
-                            
+                            <a class="navbar-brand " style="float:right;" onclick="ChangeLV(1);" href="#"><img width="80px" src="images/lvLogo.png"></a>
+                            <div style="clear:both;">
+
+                            </div>
                             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                                 <li class="nav-item active">
                                     <a class="nav-link" onclick="ChangeLV(2);" href="#">¿Qué es Lima Visual? <span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" onclick="ChangeLV(3);" href="#">Master Clases</a>
+                                    <a class="nav-link" href="./masters.html">Master Clases</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" onclick="ChangeLV(4);" href="#">Talleres</a>
+                                    <a class="nav-link" href="./talleres.html">Talleres</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" onclick="ChangeLV(5);" href="#">Horarios de Buses</a>
@@ -53,13 +55,13 @@
                         <table>
                                 <ul class="nav justify-content-end">
                                         <li class="nav-item">
-                                          <a class="nav-link active" href="#">INICIO</a>
+                                          <a class="nav-link active" href="./index.html">INICIO</a>
                                         </li>
                                         <li class="nav-item">
-                                          <a class="nav-link" href="#">TALLERES</a>
+                                          <a class="nav-link" href="./talleres.html">TALLERES</a>
                                         </li>
                                         <li class="nav-item">
-                                          <a class="nav-link" href="#">MASTER CLASES</a>
+                                          <a class="nav-link" href="./masters.html">MASTER CLASES</a>
                                         </li>
                                       </ul>
                         </table>
@@ -87,7 +89,7 @@
                 <p class="textInfo">&#9658; <span class="yellow">Campus:</span> Miraflores</p>
             </div>
             
-            <button class="d-none d-sm-block" style="background:url('images/btnInscribirse.png') no-repeat; width: 400px; height: 58px; border: 0;" onclick="Inscribirse();" class="btnInsc" type="button">   </button>
+            
         </div>
             
             <div class="col-md-2 d-none d-sm-block">
@@ -120,8 +122,8 @@
                     </tr>
                     <tr>
                         <td>
-                                <div style="width:100%; text-align:center" id="insConfirmText">
-                                        <p style="font-size:30pt; color:#6b0ab9;">¡Ya estás <br> Inscrito!</p>
+                                <div style="width:100%; text-align:center; margin-top: 10%;" id="insConfirmText">
+                                        <p style="font-size:30pt; color:#6b0ab9; font-family: nunito-sansB;">¡Ya estás <br> Inscrito!</p>
                                     </div>
                         </td>
                             
@@ -191,6 +193,11 @@
                                     </tr>
                                 </table>
                             </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="d-none d-sm-block" style="background:url('images/btnInscribirse.png') no-repeat; width: 280px; height: 58px; border: 0; margin: auto; margin-top: 30px;" onclick="Inscribirse();" class="btnInsc" type="button">   </button>
                         </td>
                     </tr>
                 </table>

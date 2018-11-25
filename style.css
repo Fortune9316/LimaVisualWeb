@@ -23,7 +23,7 @@
     background:#6b0ab9;
     /*width: 445px;*/
     width: 100%;
-    height: 634px;
+    
 }
 .botomTable{
     position: absolute;
@@ -60,7 +60,7 @@
 }
 #headerSpace video{
    width: 100%;
-   transform: scale(3);
+   transform: scale(1);
 }
 .headerSubTitleText{
     color: #f9c333;
@@ -312,7 +312,7 @@
 }
 .plumasBackground{
     background: #2dfffe;
-    height: 240px;
+    height: 250px;
     position: relative;
    
 }
