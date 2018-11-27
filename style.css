@@ -11,6 +11,9 @@
 @font-face{font-family: nunito-sansB; src: url('fonts/NunitoSans-Bold.ttf');}
 @font-face{font-family: nunito-sansEB; src: url('fonts/NunitoSans-ExtraBold.ttf');}
 
+#content{
+    overflow: hidden  !important;
+}
 #background{
     background: #fff5ff;
     width: 100%;
@@ -295,7 +298,7 @@
     color: #6b0ab9;
 }
 .footerLocation td{
-    padding-right: 35px;
+    padding-right: 0%;;
 }
 
 #imgLocation{
@@ -517,7 +520,12 @@
         border: 0;
         border-radius: 0;
     }
-
+    #btnInsF{
+        display: true;
+    }
+    #btnInsTaller{
+        display: none;
+    }
   }
   @media screen and (max-width: 600px) {
     .headDiv{
@@ -713,5 +721,11 @@
     }
     #footer{
         height: 640px; 
+    }
+    #btnInsF{
+        display: none;
+    }
+    #btnInsTaller{
+        display: true;
     }
   }

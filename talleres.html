@@ -198,14 +198,14 @@
                     </tr>
                     <tr>
                         <td>
-                            <button class="d-none d-sm-block" style="background:url('images/btnInscribirse.png') no-repeat; width: 280px; height: 58px; border: 0; margin: auto; margin-top: 30px;" onclick="Inscribirse();" class="btnInsc" type="button">   </button>
+                            <button id="btnInsF"  style="background:url('images/btnInscribirse.png') no-repeat; width: 280px; height: 58px; border: 0; margin: auto; margin-top: 30px;" onclick="Inscribirse();" class="btnInsc" type="button">   </button>
                         </td>
                     </tr>
                 </table>
             </div>
             
             <div id="btnInsTaller" class="col-xs-12 col-md-1">
-                <button id="btnInsTaller" class="d-block d-sm-none" style="background:url('images/btnInscribirse.png') no-repeat; width:400px; height: 58px; border:0; margin-top:30px; margin-left: 40px;" onclick="Inscribirse();" class="btnInsc" type="button">   </button>
+                <button id="btnInsTaller"  style="background:url('images/btnInscribirse.png') no-repeat; width:400px; height: 58px; border:0; margin-top:30px; margin-left: 40px;" onclick="Inscribirse();" class="btnInsc" type="button">   </button>
             </div>
 
             <h1 id="recomendaosTitleMov" class="txtTitleMov" style="color:#6b0ab9; margin-left: 30px; margin-top:30px; display: none;">TE RECOMENDAMOS</h1>
@@ -236,57 +236,59 @@
 
 
         <footer id="footer">
+
                 <div style="width:100%;" class="footerMov">
 
-                        <div class="row" style="padding-top:20px;">
-                            <div class="col-xs-6" style="margin-left:40px;">
-                                    <img src="images/lvLogoWhite.png">
-                            </div>
-                            <div class="col-xs-6" style="margin-left:20px; line-height: 8px; margin-top: 20px; ">
-                                    <p style="color: #f9c333 !important;">Lima Visual</p>
-                                    <p style="color: #f9c333 !important;">Master Clases</p>
-                                    <p style="color: #f9c333 !important;">Talleres</p>
-                            </div>
+                    <div class="row" style="padding-top:20px;">
+                        <div class="col-xs-6" style="margin-left:40px;">
+                                <img src="images/lvLogoWhite.png">
                         </div>
-    
-                        <div style="width:100%;">
-                                <img width="100%" id="imgLocation" src="images/isilMolina.png">
+                        <div class="col-xs-6" style="margin-left:20px; line-height: 8px; margin-top: 20px; ">
+                                <p style="color: #f9c333 !important;">Lima Visual</p>
+                                <p style="color: #f9c333 !important;">Master Clases</p>
+                                <p style="color: #f9c333 !important;">Talleres</p>
                         </div>
-                                        
-                        <div class="row">
-                            <table style="margin:auto;">
-                                <tr>
-                                    <td style="padding-left:30px; padding-right:30px; color:#f9c333;">
-                                            <button style="background:#6b0ab9; color: #f9c333; border:0;" onclick="ChangeLocation(2)">Miraflores</button>
+                    </div>
+
+                    <div style="width:100%;">
+                            <img width="100%" id="imgLocation" src="images/isilMolina.png">
+                    </div>
+                                    
+                    <div class="row">
+                        <table style="margin:auto;">
+                            <tr>
+                                <td style="padding-left:30px; padding-right:30px; color:#f9c333;">
+                                        <button style="background:#6b0ab9; color: #f9c333; border:0;" onclick="ChangeLocation(2)">Miraflores</button>
+                                </td>
+                                <td style="padding-left:30px; padding-right:30px; color:#f9c333;">
+                                        <button style="background:#6b0ab9; color: #f9c333; border:0;" onclick="ChangeLocation(3)">Miraflores</button>
                                     </td>
                                     <td style="padding-left:30px; padding-right:30px; color:#f9c333;">
-                                            <button style="background:#6b0ab9; color: #f9c333; border:0;" onclick="ChangeLocation(3)">Miraflores</button>
+                                            <button style="background:#6b0ab9; color: #f9c333; border:0;" onclick="ChangeLocation(1)">Miraflores</button>
                                         </td>
-                                        <td style="padding-left:30px; padding-right:30px; color:#f9c333;">
-                                                <button style="background:#6b0ab9; color: #f9c333; border:0;" onclick="ChangeLocation(1)">Miraflores</button>
-                                            </td>
-                                </tr>
-                            </table>
-                          
-                        </div>
-                        <div>
-                            <table style="margin:auto; margin-top: 20px; margin-bottom: 20px;">
-                                <tr>
-                                        <td style="padding-left:10px; padding-right:10px;">
-                                                <img src="images/facebookBtn.png">
-                                            </td>
-                                            <td style="padding-left:10px; padding-right:10px;">
-                                                <img src="images/instagramBtn.png">
-                                            </td>
-                                            <td style="padding-left:10px; padding-right:10px;">
-                                                <img src="images/twitterBtn.png">
-                                            </td>
-                                </tr>
-                            </table>
-                        </div>
-    
+                            </tr>
+                        </table>
+                      
                     </div>
-            <div style="padding-bottom:30px;" class="container row footerDes">
+                    <div>
+                        <table style="margin:auto; margin-top: 20px; margin-bottom: 20px;">
+                            <tr>
+                                    <td style="padding-left:10px; padding-right:10px;">
+                                            <img src="images/facebookBtn.png">
+                                        </td>
+                                        <td style="padding-left:10px; padding-right:10px;">
+                                            <img src="images/instagramBtn.png">
+                                        </td>
+                                        <td style="padding-left:10px; padding-right:10px;">
+                                            <img src="images/twitterBtn.png">
+                                        </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+
+                    <div style="padding-bottom:30px;  width: 100%;" class="row footerDes">
                         <div class="col-md-1">
                             
                         </div>
@@ -326,37 +328,26 @@
                         <div class="col-md-2">
         
                         </div>
-                        <div class="col-md-4" style="padding-left:40%;">
-                            <table>
+                        <div class="col-md-5" style="width: 100%; text-align: right;">
+                            <table style=" width:100%;">
                                 <tr>
                                     <td>
-                                        <img id="imgLocation2" src="images/isilMolina.png">
+                                        <div >
+                                                <img id="imgLocation2" src="images/isilMolina.png"><br>
+                                                <div style="width:60%; float:right;" class="row">
+                                                        <button class="col" style="background:#6b0ab9; color: #f9c333; border:0; " onclick="ChangeLocation(2)">Miraflores</button>
+                                                        <button class="col" style="background:#6b0ab9; color: #f9c333; border:0; " onclick="ChangeLocation(3)">La Molina</button>
+                                                        <button class="col" style="background:#6b0ab9; color: #f9c333; border:0; " onclick="ChangeLocation(1)">San Isidro</button>
+                                                </div>
+                                                
+                                        </div>
+                                        
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td>
-                                            <table style="width:100%; text-align:center;">
-                                                <tr class="footerLocation">
-                                                            <td >
-                                                                
-                                                                <button style="background:#6b0ab9; color: #f9c333; border:0;" onclick="ChangeLocation(2)">Miraflores</button>
-                                                            </td>
-                                                            <td>
-                                                                <button style="background:#6b0ab9; color: #f9c333; border:0;" onclick="ChangeLocation(3)">La Molina</button>
-                                                            </td>
-                                                            <td>
-                                                                <button style="background:#6b0ab9; color: #f9c333; border:0;" onclick="ChangeLocation(1)">San Isidro</button>
-                                                            </td>
-                                                </tr>
-        
-                                            </table>
-                                    </td>
-                                </tr>
+                                
                             </table>
                         </div>
-                        <div class="col-md-1" >
-        
-                        </div>
+                        
                         
                     </div>
                     <div style="background:black; height:50px; text-align: center;">
@@ -383,7 +374,7 @@
                     <div style="text-align:center; font-size: 15pt; color: #2dfffe;" class="styleFooterMov">
                         <p style="color:#2dfffe;">Copyrigth 2018 . Lima Visual</p>
                     </div>
-        </footer>
+                </footer>
 
 
     </div>

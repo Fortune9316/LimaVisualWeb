@@ -242,6 +242,7 @@ function Inscribirse()
     $('#btnInsTaller').css('display','none');
     $('#recomendadosMov').show();
     $('#recomendaosTitleMov').show();
+    $('#btnInsF').css('display','none');
 }
 
 
