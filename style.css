@@ -63,7 +63,7 @@
 }
 #headerSpace video{
    width: 100%;
-   transform: scale(1);
+   transform: scale(1.2);
 }
 .headerSubTitleText{
     color: #f9c333;
