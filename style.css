@@ -22,6 +22,10 @@
     z-index: -2;
 }
 
+#header{
+    margin-bottom: 0%;
+}
+
 #headerBanner{
     background:#6b0ab9;
     /*width: 445px;*/
