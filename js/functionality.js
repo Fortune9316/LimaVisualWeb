@@ -221,20 +221,20 @@ function ChangeLV(x){
         break;
         case 2:
             $('#lvQue').show();
-            document.getElementById("header").style.marginBottom = "20%";
+            document.getElementById("header").style.marginBottom = "25%";
             
         break;
         case 3:
             $('#lvMaster').show();
-            document.getElementById("header").style.marginBottom = "20%";
+            document.getElementById("header").style.marginBottom = "25%";
         break;
         case 4:
             $('#lvTaller').show();
-            document.getElementById("header").style.marginBottom = "20%";
+            document.getElementById("header").style.marginBottom = "25%";
         break;
         case 5:
             $('#lvHorario').show();
-            document.getElementById("header").style.marginBottom = "20%";
+            document.getElementById("header").style.marginBottom = "25%";
         break;
     }
 }
