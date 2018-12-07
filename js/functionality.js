@@ -217,24 +217,24 @@ function ChangeLV(x){
     switch(x){
         case 1:
             $('#lvVideo').show();
-            document.getElementById("header").style.marginBottom = "25%";
+            document.getElementById("header").style.marginBottom = "22%";
         break;
         case 2:
             $('#lvQue').show();
-            document.getElementById("header").style.marginBottom = "25%";
+            document.getElementById("header").style.marginBottom = "22%";
             
         break;
         case 3:
             $('#lvMaster').show();
-            document.getElementById("header").style.marginBottom = "25%";
+            document.getElementById("header").style.marginBottom = "22%";
         break;
         case 4:
             $('#lvTaller').show();
-            document.getElementById("header").style.marginBottom = "25%";
+            document.getElementById("header").style.marginBottom = "22%";
         break;
         case 5:
             $('#lvHorario').show();
-            document.getElementById("header").style.marginBottom = "25%";
+            document.getElementById("header").style.marginBottom = "22%";
         break;
     }
 }
