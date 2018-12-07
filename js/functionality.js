@@ -217,7 +217,7 @@ function ChangeLV(x){
     switch(x){
         case 1:
             $('#lvVideo').show();
-            document.getElementById("header").style.marginBottom = "35%";
+            document.getElementById("header").style.marginBottom = "25%";
         break;
         case 2:
             $('#lvQue').show();

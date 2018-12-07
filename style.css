@@ -54,10 +54,18 @@
     background: #6b0ab9;
     border: 0px;
     color: #2dfffe;
+    cursor: pointer;
+}
+.headerButton:over{
+    cursor: pointer;
 }
 .headerButtons{
     background: #6b0ab9;
     border: 0px;
+    cursor: pointer;
+}
+.headerbuttons:over{
+    cursor: pointer;
 }
 #headerSpace{
     
@@ -135,6 +143,7 @@
   }
   .talleresItem{
       color: black;
+      border: none;
   }
   
 
