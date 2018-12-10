@@ -442,7 +442,7 @@
         padding-left: 40px;
         padding-right: 30px;
         padding-top: 5px;
-        font-size: 10.5pt;
+        font-size: 0.8vw;
     }
     .masterFTitle{
         color: #6b0ab9;
@@ -740,5 +740,15 @@
     }
     #btnInsTaller{
         display: true;
+    }
+  }
+  @media screen and (min-width: 1324px) {
+    #header{
+        margin-bottom: 10% !important;
+    }
+  }
+  @media screen and (min-width: 1620px) {
+    #header{
+        margin-bottom: 20% !important;
     }
   }

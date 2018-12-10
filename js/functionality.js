@@ -21,13 +21,13 @@ var titleMasterR1 = ["IDEAS QUE MARCAN","EN LA RADIO"];
 var titleMasterR2 = ["Sandra Fuentes","Susana Castillo"];
 var titleMovMasterR1 = ["INTELIGENCIA AIII","SOCIAL MEDIA","IDEAS QUE MARCAN","EN LA RADIO"];
 var titleMovMasterR2 = ["Francisco Ruiz", "Alejandro C.","Sandra Fuentes","Susana Castillo"];
-var contentMasterText = ["No es lo mismo trabajar en la industria de la publicidad que en la industria de la creatividad que mejoran la vida del usuario",
-"Esta charla es acerca de como Instagram, con un billón de usuarios activos diarios,y que pronto se convertirá en la red social más importante"];
-var contentMasterText2 = ["Una marca es tan buena como la idea que representa, y ésta debe sorprender, intrigar y explicar con un lenguaje simple",
-"Cada Mundial de Fútbol es una nueva ventana para encontrarnos con los avances tecnológicos que aportan en cada cobertura periodística"];
-var contentMovMasterText2 = ["No es lo mismo trabajar en la industria de la publicidad que en la industria de la creatividad que mejoran la vida del usuario",
-"Esta charla es acerca de como Instagram, con un billón de usuarios activos diarios,y que pronto se convertirá en la red social más importante","Una marca es tan buena como la idea que representa, y ésta debe sorprender, intrigar y explicar con un lenguaje simple",
-"Cada Mundial de Fútbol es una nueva ventana para encontrarnos con los avances tecnológicos que aportan en cada cobertura periodística"];
+var contentMasterText = ["No es lo mismo trabajar en la industria de la publicidad que en la industria de la creatividad que mejoran la vida",
+"Esta charla es acerca de como Instagram, con un billón de usuarios activos diarios,y que pronto se convertirá"];
+var contentMasterText2 = ["Una marca es tan buena como la idea que representa, y ésta debe sorprender, intrigar y explicar con un lenguaje",
+"Cada Mundial de Fútbol es una nueva ventana para encontrarnos con los avances tecnológicos"];
+var contentMovMasterText2 = ["No es lo mismo trabajar en la industria de la publicidad que en la industria de la creatividad que mejoran la vida",
+"Esta charla es acerca de como Instagram, con un billón de usuarios activos diarios,y que pronto se convertirá","Una marca es tan buena como la idea que representa, y ésta debe sorprender, intrigar y explicar con un lenguaje",
+"Cada Mundial de Fútbol es una nueva ventana para encontrarnos con los avances tecnológicos"];
 var contentMasterDay = ["&#9658;<span style=\"color:#f9c333 !important;\">Día</span> 18/08</div>","&#9658;<span style=\"color:#f9c333 !important;\">Día</span> 19/08"];
 var contentMasterDay2= ["&#9658;<span style=\"color:#f9c333 !important;\">Día</span> 18/08</div>","&#9658;<span style=\"color:#f9c333 !important;\">Día</span> 19/08"];
 var contentMovMasterDay2 = ["&#9658;<span style=\"color:#f9c333 !important;\">Día</span> 18/08</div>","&#9658;<span style=\"color:#f9c333 !important;\">Día</span> 19/08","&#9658;<span style=\"color:#f9c333 !important;\">Día</span> 18/08</div>","&#9658;<span style=\"color:#f9c333 !important;\">Día</span> 19/08"];
@@ -217,24 +217,24 @@ function ChangeLV(x){
     switch(x){
         case 1:
             $('#lvVideo').show();
-            document.getElementById("header").style.marginBottom = "22%";
+            document.getElementById("header").style.marginBottom = "0%";
         break;
         case 2:
             $('#lvQue').show();
-            document.getElementById("header").style.marginBottom = "22%";
+            document.getElementById("header").style.marginBottom = "0%";
             
         break;
         case 3:
             $('#lvMaster').show();
-            document.getElementById("header").style.marginBottom = "22%";
+            document.getElementById("header").style.marginBottom = "0%";
         break;
         case 4:
             $('#lvTaller').show();
-            document.getElementById("header").style.marginBottom = "22%";
+            document.getElementById("header").style.marginBottom = "0%";
         break;
         case 5:
             $('#lvHorario').show();
-            document.getElementById("header").style.marginBottom = "22%";
+            document.getElementById("header").style.marginBottom = "0%";
         break;
     }
 }
